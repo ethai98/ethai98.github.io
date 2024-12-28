@@ -1,18 +1,17 @@
 ---
 title: "Voice on the Job for Younger Worker"
-author: "(w/ John S. Ahlquist and Jake M. Grumbach)"
 collection: publications
 category: reports
-permalink: 
+permalink: /publications/2023-voice
 excerpt: ''
 date: 2024-02-17
 venue: 'Annie E. Casey Foundation and UC San Diego School of Global Policy and Strategy'
 slidesurl: #
-paperurl: 'http://ethai98.github.io/files/AGT_CaseyReport_Final.pdf'
-citation: 'Ahlquist, John S., Grumbach, Jake M., Thai, Eric (2023). &quot;Voice on the Job for Younger Workers.&quot; <i>UC San Diego School of Global Policy and Strategy</i>.'
-editor_options: 
-  markdown: 
-    wrap: 72
+code:
+link:
+github:
+paperurl: '/files/AGT_CaseyReport_Final.pdf'
+citation: 'Ahlquist, John S., Grumbach, Jake M., Thai, Eric (2023). "Voice on the Job for Younger Workers." <i>UC San Diego School of Global Policy and Strategy</i>.'
 ---
 
 # Executive Summary
