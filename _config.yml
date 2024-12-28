@@ -6,6 +6,8 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# validate YAML using https://www.yamllint.com/
+
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Eric Thai"
@@ -22,9 +24,9 @@ repository               : "ethai98/ethai98.github.io"
 author:
   # Biographic information
   avatar           : "headshot_APSA2024.jpeg"
-  name             : "Eric Thai
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  name             : "Eric Thai"
+  pronouns         : "he/him"
+  bio              : "Ph.D. Candidate in Political Science"
   location         : "San Diego, CA"
   employer         : "University of California, San Diego"
   uri              : # URL
