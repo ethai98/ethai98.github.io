@@ -21,7 +21,7 @@ repository               : "ethai98/ethai98.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot_APSA2024.jpg"
+  avatar           : "headshot_APSA2024.jpeg"
   name             : "Eric Thai
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
