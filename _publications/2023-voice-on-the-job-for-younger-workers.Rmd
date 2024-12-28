@@ -1,0 +1,15 @@
+---
+title: "Voice on the Job for Younger Worker"
+author: "(w/ John S. Ahlquist and Jake M. Grumbach)"
+collection: publications
+category: conferences
+permalink: http://johnahlquist.net/files/AGT_CaseyReport_Final.pdf
+excerpt: ''
+date: 2024-02-17
+venue: 'Annie E. Casey Foundation and UC San Diego School of Global Policy and Strategy'
+slidesurl: #
+paperurl: 'http://ethai98.github.io/files/AGT_CaseyReport_Final.pdf'
+citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+---
+
+
