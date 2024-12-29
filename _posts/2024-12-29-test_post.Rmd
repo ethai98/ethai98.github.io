@@ -1,0 +1,40 @@
+---
+title: Test Post
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2024-12-29
+permalink: /posts/2024-12-29-test_post
+excerpt_separator: <!--more-->
+always_allow_html: true
+toc: true
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+---
+Lorem ipsum odor amet, consectetuer adipiscing elit. Dui senectus placerat himenaeos nulla potenti. Tincidunt ipsum sollicitudin cubilia quisque taciti natoque nisl cursus. Tortor proin elementum facilisis congue magnis urna turpis. Cras risus suscipit diam, ornare odio dis montes amet enim. Convallis mattis ad imperdiet consequat tempus condimentum erat. Est ultrices pretium nisl suscipit urna aliquam. Eget laoreet diam dictum; commodo potenti pretium.
+<!--more-->
+Lacinia aliquet ipsum eu platea tempor augue. Massa molestie turpis maecenas mus aliquam, vel malesuada consequat. Pretium rhoncus lacinia etiam at finibus venenatis. Taciti netus adipiscing taciti suscipit vivamus varius curabitur molestie. Himenaeos a porta magna nisi tempor mus ipsum habitant? Non augue est penatibus curabitur luctus vitae. Cubilia dis magnis sagittis sit rutrum, parturient turpis posuere. Augue justo nibh venenatis tristique pellentesque.
+
+Montes ultrices nisl luctus porta; etiam class tellus at. Molestie iaculis etiam, sit hendrerit dolor ridiculus consectetur curae. Curabitur hendrerit conubia elementum erat euismod mollis turpis malesuada. Malesuada natoque vivamus; aliquam montes risus duis. Dictum cursus potenti eleifend vel vitae; duis arcu ad. Imperdiet neque magnis porttitor duis nec gravida nulla.
+
+Molestie natoque semper class consectetur commodo ipsum. Sit natoque phasellus finibus magnis vestibulum. Duis parturient nisi magna tincidunt, parturient urna. Vel quisque in tempor velit eleifend, habitant enim rhoncus. Dapibus bibendum purus non aptent; ad netus fermentum taciti pellentesque. Tortor felis sapien fames molestie iaculis augue auctor mollis. Per platea in penatibus lectus finibus efficitur, mattis magnis congue. Orci adipiscing amet; lacinia habitant lorem faucibus fusce non vel. Pretium ac ultrices nam quis vestibulum. Inceptos faucibus vel elit non feugiat sem taciti.
+
+Eu potenti natoque nisi nostra suspendisse convallis netus. Sociosqu conubia dignissim aliquet donec facilisis eleifend suspendisse id. Nec varius feugiat himenaeos, suscipit fusce porta himenaeos risus. Dis lacinia fusce nec habitant neque vestibulum. Potenti rutrum ipsum lacinia rhoncus aliquam; elementum molestie. Amet posuere nec quisque ligula mauris viverra pellentesque. Nullam efficitur facilisis feugiat gravida blandit justo cursus curabitur.
+
+Facilisis aptent faucibus fermentum erat lobortis lacinia. Et scelerisque fermentum dapibus nisi scelerisque; tincidunt tristique. Scelerisque tempus duis, sed laoreet imperdiet efficitur lobortis nisl torquent. Condimentum magnis ullamcorper ornare quisque eu erat mi pretium. Odio in tempus eleifend, nullam habitasse maecenas hac. Lorem odio tempor natoque tincidunt aenean lorem facilisis phasellus habitant. Ridiculus dolor torquent posuere metus lectus; pulvinar eu. Phasellus quis torquent, congue curabitur tortor vulputate blandit convallis. Consectetur hendrerit per rutrum aliquet quam nibh consequat.
+
+Proin praesent gravida lorem velit donec cubilia. Eleifend sociosqu inceptos sed habitant facilisis. Vitae senectus sagittis magnis metus sit auctor. Conubia nunc quam sociosqu justo taciti. Suspendisse vulputate justo lacus suscipit class? Nam sed odio auctor; metus in maximus. Mauris suspendisse hac ultrices suscipit sed. Venenatis in libero eleifend ornare auctor volutpat. Natoque euismod himenaeos convallis facilisis fringilla. Convallis cursus finibus velit mus enim.
+
+Vivamus duis sit sit venenatis scelerisque. Iaculis at nascetur per ac lobortis hendrerit efficitur. Magnis justo fringilla netus blandit nisl dolor. Odio urna taciti lectus volutpat metus eros. Nunc curabitur lacus risus aenean est parturient sem lectus ultrices. Vestibulum fermentum mus mi metus litora! Tempor arcu eleifend; sociosqu urna et magna. Nunc fames imperdiet etiam convallis mi. Magna vel ultricies est diam mattis metus eu orci. Nunc donec tellus ad venenatis proin lobortis et ornare.
+
+Litora sem duis a sociosqu enim tristique. Aliquam morbi tellus enim litora nunc hac dignissim pellentesque condimentum. Vehicula natoque eleifend cursus felis urna litora rhoncus. Iaculis vivamus leo vestibulum cubilia hendrerit platea per diam. Consequat erat molestie pharetra, amet ut mollis. Consequat neque facilisis volutpat iaculis facilisi? Nascetur platea lobortis id aenean platea id mollis primis.
+
+Pharetra quis eros in orci metus. Tellus fringilla est urna orci accumsan malesuada posuere dignissim. Hac placerat magna id gravida lobortis dapibus nullam. Eu pretium orci nascetur; senectus rhoncus phasellus porttitor. Venenatis varius est augue tellus consectetur urna. Id elementum laoreet gravida litora sem inceptos ac ac tempus. Facilisi placerat porttitor aliquet, id faucibus laoreet. Aenean cubilia nunc integer metus magnis molestie interdum consectetur. Habitant neque dictum enim cubilia suspendisse natoque mollis neque.
+
+

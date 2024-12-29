@@ -1,0 +1,21 @@
+---
+permalink: /teaching/
+title: "Teaching"
+author_profile: true
+---
+
+[teaching statement]
+
+## University of California, San Diego
+
+-   POLI 12: Introduction to International Relations (Summer Session 1, 2024)
+
+    -   [Syllabus](/files/pdf/teaching/poli12_syllabus_ss1_2024.pdf)
+
+-   POLI 144AB: Special Topics in International Political Economy: Trade and US Politics (Summer Session 2, 2024)
+
+    -   [Syllabus](/files/pdf/teaching/poli144AB_syllabus_ss2_2024.pdf)
+
+-   POLI 12: Introduction to International Relations (Spring Quarter, 2025)
+
+    -   Syllabus (Work in Progress)

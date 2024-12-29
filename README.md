@@ -3,6 +3,12 @@
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
+# EXAMPLES
+
+Rob Williams's github https://github.com/jayrobwilliams/jayrobwilliams.github.io/blob/cbffd6c6faa6b527594584ab1cda15a98b7a385d/_posts/2023-03-04-nest-map.md?plain=1
+
+
+
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)

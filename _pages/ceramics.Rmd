@@ -1,0 +1,13 @@
+---
+permalink: /ceramics/
+title: "Ceramics Portfolio"
+author_profile: true
+output:
+md_document:
+variant: gfm
+preserve_yaml: true
+---
+
+<a href="https://www.instagram.com/ericthaiceramics/" target="_blank">
+  <img src="images/instagram_ceramics.png" alt="Eric Thai Ceramics on Instagram" style="max-width:100%;">
+</a>

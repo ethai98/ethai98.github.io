@@ -1,20 +1,9 @@
 ---
-title: "Teaching experience 1"
+title: "POLI 12: Introduction to International Relations"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Lower Division"
+permalink: /teaching/2024_SS1_POLI12
+venue: "University of California, San Diego, Political Science Department"
+date: July 2024
+location: "La Jolla, CA"
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======

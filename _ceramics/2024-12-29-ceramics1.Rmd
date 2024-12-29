@@ -1,0 +1,22 @@
+---
+title: "Handcrafted Vase"
+layout: single-portfolio
+date: 2024-01-01
+permalink: /cerarmics/2024-01-01-tear-drop-cup
+header:
+  image: "/images/ceramics/tear_drop_cup.jpg"
+  overlay_image: "/images/ceramics/tear_drop_cup.jpg"  # Path to a teaser image used in listings
+collection: ceramics
+description: "First iteration of my tear-drop cup series."
+categories:
+  - handmade
+  - pottery
+output:
+  md_document:
+    variant: markdown_github
+    preserve_yaml: true
+---
+
+
+
+Blah blah
