@@ -16,8 +16,8 @@ main:
         
   - title: "Posts"
     url: /posts/
-        
-  - title: "Ceramics"
-    url: /ceramics/    
+  #       
+  # - title: "Ceramics"
+  #   url: /ceramics/    
 
     

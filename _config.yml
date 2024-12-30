@@ -27,8 +27,8 @@ author:
   name             : "Eric Thai"
   pronouns         : "he/him"
   bio              : "Ph.D. Candidate in Political Science"
-  location         : "San Diego, CA"
-  employer         : "University of California, San Diego"
+  location         : # "San Diego, CA"
+  employer         : "UC San Diego"
   uri              : # URL
   email            : "ethai@ucsd.edu" 
 

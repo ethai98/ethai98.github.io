@@ -4,9 +4,9 @@ title: "Teaching"
 author_profile: true
 ---
 
-[teaching statement]
+<!-- [teaching statement] -->
 
-## University of California, San Diego
+## *Associate Instructor* for the University of California, San Diego
 
 -   POLI 12: Introduction to International Relations (Summer Session 1, 2024)
 

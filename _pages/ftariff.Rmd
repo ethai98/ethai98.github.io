@@ -1,7 +1,15 @@
 ---
 permalink: /ftariff/
 title: "FTariff: Treatment of Tariffs in Free Trade Agreements (FTAs)"
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author_profile: true
 ---
 
 **Authors:** Eric Thai (UCSD) and Elisabeth Van Lieshout (OECD)
+
+**FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements.

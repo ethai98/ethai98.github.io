@@ -12,3 +12,5 @@ Eric Thai is a fifth-year Ph.D. candidate in Political Science at the University
 As a first-generation immigrant from Vietnam with Cantonese cultural heritage, Eric is the first in his family to pursue a Ph.D. He earned a Bachelor of Arts in Political Science, summa cum laude, from the University of California, Davis. Eric's early life was split between Ho Chi Minh City/Saigon and the San Gabriel Valley, known locally as "the 626." 
 
 Eric has been a ceramic hobbyist in his free time since March 2023. He enjoys making and gifting ceramic goods to friends and family.
+
+[![Phaseout Duration](/images/phaseout_ticks.jpg)](/ftariff/)

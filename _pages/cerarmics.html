@@ -1,0 +1,89 @@
+---
+permalink: /ceramics/
+title: "Ceramics Portfolio"
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .author-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .author-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .author-details {
+            flex: 1;
+        }
+        .author-links {
+            list-style: none;
+            padding: 0;
+        }
+        .author-links li {
+            padding: 5px 0;
+        }
+        .author-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .author-links a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <main>
+        <div class="author-profile">
+            <img src="{{ '/path/to/your/default/author/image.jpg' | relative_url }}" alt="Author Image" class="author-image">
+            <div class="author-details">
+                <h2>Author Name</h2>
+                <p>Author bio here...</p>
+                <ul class="author-links">
+                    <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <a href="https://www.instagram.com/ericthaiceramics/" target="_blank">
+                <img src="{{ '/images/instagram_ceramics.png' | relative_url }}" alt="Eric Thai Ceramics on Instagram">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © {{ 'now' | date: "%Y" }} Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

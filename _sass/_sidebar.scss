@@ -13,13 +13,6 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
-  }
-
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -31,8 +24,8 @@
     }
   }
 
+
   @include breakpoint($x-large) {
-    max-width: $sidebar-link-max-width;
     padding-right: 0;
   }
 
@@ -58,17 +51,17 @@
 
 .sidebar__right {
   margin-bottom: 1em;
-
+  
   @include breakpoint($large) {
-    position: relative;
-    float: right;
+    position: sticky !important;
+    float: right !important;
+    top: 0;
+    right: 0;
     width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
+    margin-right: -1 * $right-sidebar-width-narrow;
+    padding-left: 1em;
+    padding-top: 1em !important;
     z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
   }
 }
 
@@ -126,22 +119,6 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-}
-
-.sidebar .author__desktop {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
-}
-
-.author__pronouns {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 }
 
 .author__bio {

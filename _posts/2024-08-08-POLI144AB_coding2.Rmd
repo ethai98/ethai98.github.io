@@ -1,0 +1,153 @@
+---
+title: POLI 144AB Coding Workshop 2
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2024-08-08
+permalink: /posts/2024/poli144ab_coding2
+excerpt_separator: <!--more-->
+always_allow_html: true
+toc: true
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+  - data-manipulation
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+[R
+Script](https://www.dropbox.com/scl/fi/51ru0k8p2gove2bl9iylf/workshop2.Rmd?rlkey=hjxvje7lgqvy5hpsn24bxap72&dl=0){:
+.btn--research}
+
+[V-Dem Dataset
+(v9)](https://www.dropbox.com/scl/fi/0oioskebzm75q0bzdnwxk/V-Dem-Dataset.csv?rlkey=k9so4ygzoenan627aq00x4c3y&dl=0){:
+.btn--research} [V-Dem Dataset
+Codebook](https://www.dropbox.com/scl/fi/ffeimy5337k79x3t1frx2/V-Dem-Codebook-v9.pdf?rlkey=fmqxn3dsbjru8ag2oburlqklx&dl=0){:
+.btn--research}
+
+<!--more-->
+
+\
+
+Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I.
+Lindberg, Jan Teorell, David Altman, Michael Bernhard, M. Steven Fish,
+Adam Glynn, Allen Hicken, Anna Lührmann, Kyle L. Marquardt, Kelly
+McMann, Pamela Paxton, Daniel Pemstein, Brigitte Seim, Rachel Sigman,
+Svend-Erik Skaaning, Jeffrey Staton, Agnes Cornell, Lisa Gastaldi,
+Haakon Gjerløw, Valeriya Mechkova, Johannes von Römer, Aksel Sundtröm,
+Eitan Tzelgov, Luca Uberti, Yi-tingWang, Tore Wig, and Daniel Ziblatt.
+2019. "V-Dem Codebook v9" Varieties of Democracy (V-Dem) Project.
+
+## Load data
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.path = '../assets/images/')
+```
+
+
+```{r}
+
+library(here)
+library(readr)
+library(tidyverse)
+library(haven)
+
+vdem<- read_csv("~/Dropbox/Teaching/SS2_2024_POLI144AB/Data/V-Dem Dataset.csv")
+```
+
+## Select our variables
+
+```{r}
+vdem_cleaned <- vdem %>% 
+  select(country_name, year, v2x_polyarchy, v2mecenefm) 
+```
+
+## Histogram
+
+```{r}
+vdem_cleaned %>%
+  ggplot(aes(x = v2x_polyarchy)) +
+  geom_histogram()
+
+```
+
+```{r}
+vdem_cleaned %>%
+  ggplot(aes(x = year, y = v2x_polyarchy, color = country_name)) +
+  geom_line() +
+  theme(legend = "none")
+
+vdem_cleaned %>%
+  group_by(year) %>%
+  summarise(v2x_polyarchy_average = mean(v2x_polyarchy, na.rm = TRUE)) %>%
+  ggplot(aes(x = year, y = v2x_polyarchy_average)) +
+  geom_line()
+```
+
+## Scatterplot
+
+```{r}
+vdem_cleaned %>%
+  ggplot(aes(x = v2x_polyarchy, y = v2mecenefm)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+```{r}
+lm(v2mecenefm ~ v2x_polyarchy,
+   data = vdem_cleaned)
+```
+
+```{r}
+-1.575 + 4.479
+```
+
+```{r}
+vdem_global_mean <- vdem_cleaned %>%
+  group_by(year) %>%
+  summarise(v2x_polyarchy = mean(v2x_polyarchy, na.rm = TRUE)) %>%
+  mutate(country_name = "Global")
+
+vdem_cleaned %>%
+  filter(country_name == "United States of America") %>%
+  select(-v2mecenefm) %>%
+  bind_rows(vdem_global_mean) %>%
+  ggplot(aes(x = year, y = v2x_polyarchy, color = country_name)) +
+  geom_line() +
+  labs(x = "Year",
+       y = "V-Dem Polyarchy",
+       color = "Country",
+       title = "Polyarchy Trends over Time (US vs Global)")
+
+
+```
+
+```{r}
+
+vdem_cleaned %>%
+  filter(country_name %in% c("United States of America", "Mexico", "Canada")) %>%
+  select(-v2mecenefm) %>%
+  ggplot(aes(x = year, y = v2x_polyarchy, fill = country_name)) +
+  geom_col(position = "dodge") +
+  scale_fill_viridis_d()
+
+
+```
+
+```{r}
+library(plotly)
+
+piechart_data = vdem_cleaned %>%
+  filter(country_name %in% c("United States of America", "Mexico", "Canada") & year == 2000) 
+
+
+plot_ly(piechart_data, labels = ~country_name, values = ~v2x_polyarchy, type = "pie", marker = list(colors = c("#F23030", "#267365", "#F28705")) )
+
+```

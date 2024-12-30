@@ -117,14 +117,6 @@ body:hover .visually-hidden button {
   @include container();
 }
 
-/* Source: http://snipplr.com/view/10979/css-cross-browser-word-wrap */
-.wordwrap { 
-  white-space: pre-wrap;      /* CSS3 */   
-  white-space: -moz-pre-wrap; /* Firefox */    
-  white-space: -pre-wrap;     /* Opera <7 */   
-  white-space: -o-pre-wrap;   /* Opera 7 */    
-  word-wrap: break-word;      /* IE */
-}
 
 /*
    Images
@@ -187,22 +179,11 @@ body:hover .visually-hidden button {
   vertical-align: middle;
 }
 
-/* Adjust this setting to control the space between an icon and text in the sidebar */
-.icon-pad-right {
-  padding-right: 0.5em;
-  margin-right: 0.5em;
-}
-
 /* social icons*/
 
 .social-icons {
   .fa {
     color: #000;
-  }
-
-  .fa-bluesky,
-  .fa-bluesky-square {
-    color: $bluesky-color;
   }
 
   .fa-behance,
@@ -232,6 +213,10 @@ body:hover .visually-hidden button {
   .fa-github-square {
     color: $github-color;
   }
+  
+  .fa-gitlab {
+    color: $gitlab-color;
+  }
 
   .fa-google-plus,
   .fa-google-plus-square {
@@ -240,11 +225,6 @@ body:hover .visually-hidden button {
 
   .fa-instagram {
     color: $instagram-color;
-  }
-
-  .fa-kaggle,
-  .fa-kaggle-square {
-    color: $kaggle-color;
   }
 
   .fa-lastfm,
@@ -256,15 +236,9 @@ body:hover .visually-hidden button {
   .fa-linkedin-square {
     color: $linkedin-color;
   }
-
-  .fa-mastodon,
-  .fa-mastodon-square {
+  
+  .fa-mastodon {
     color: $mastodon-color;
-  }
-
-  .ai-orcid,
-  .ai-orcid-square {
-    color: $orcid-color;
   }
 
   .fa-pinterest,
@@ -315,6 +289,11 @@ body:hover .visually-hidden button {
   .fa-xing,
   .fa-xing-square {
     color: $xing-color;
+  }
+  
+  .ai-orcid,
+  .ai-orcid-square {
+    color: $orcid-color;
   }
 }
 
@@ -471,8 +450,8 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .footnote {
-  color: mix(#fff, $gray, 25%);
-  text-decoration: none;
+  color: $link-color;
+  text-decoration: none !important;
 }
 
 .footnotes {
@@ -486,7 +465,7 @@ body:hover .visually-hidden button {
 
 a.reversefootnote {
   color: $gray;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover {
     text-decoration: underline;

@@ -8,4 +8,14 @@ author_profile: true
 
 <!-- [blah blah] -->
 
-## Work in progress
+## Working Papers
+
+### The Strategic Use of Tariff Phaseouts in US Free Trade Agreements
+
+\*Presented at GSIPE APSA 2024 Pre-Conference and APSA 2024 (Philadelphia), GSIPE Fall 2024 Virtual Webinar, PEIO 2025 (Harvard)
+
+> **Abstract:** Rules on the duration of tariff elimination are ubiquitous in modern free trade agreements (FTAs). Yet, phaseout durations are allocated differentially and selectively to sensitive sectors as more extensive usage generates opportunity costs for more exporters. How does the Executive determine which products are politically sensitive? Aside from softening import competition, I argue that the sources of political sensitivities arise from the Executive's interests in either insulating themselves electorally or promoting FTA ratification. I test my argument using a novel dataset on tariff treatment at the tariff line level for all 13 FTAs ratified by the United States. I find that longer tariff phaseouts are allocated to products in industries concentrated in more electorally competitive states, and this relationship is significantly magnified for highly import-sensitive products. These findings show that the Executives' particularistic preferences partly shape the structure of FTA tariff schedules.
+>
+> **Keywords:** tariffs, trade agreements, US politics, particularistic president
+
+[Working Paper](/files/pdf/research/20241229_strategic.pdf){: .btn--research}

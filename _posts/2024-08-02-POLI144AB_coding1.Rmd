@@ -1,0 +1,38 @@
+---
+title: POLI 144AB Coding Workshop 1
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2024-08-02
+permalink: /posts/2024/poli144ab_coding1
+excerpt_separator: <!--more-->
+always_allow_html: false
+toc: false
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+  - data-manipulation
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+[R
+Script](https://www.dropbox.com/scl/fi/lpoqa456kd4t4s4xv35nm/Workshop1.R?rlkey=akn40eviihtklx3k6a312zle8&dl=0){:
+.btn--research}
+
+[IPE Dataset
+(v4)](https://www.dropbox.com/scl/fi/ts2u49mfsqkqyz5yg5vg9/IPE-Dataset.rdata?rlkey=2yoweaekwysc26jjayyfcl82w&dl=0){:
+.btn--research} [IPE Dataset
+Codebook](https://www.dropbox.com/scl/fi/c6qxotkw4lnhcqjxihzw1/1.IPE_Codebook_Public_Version_4.0.docx?rlkey=hjvtr62s24uk3tmxgzr6m4454&dl=0){:
+.btn--research}\
+Graham, Benjamin A.T.; Tucker, Jacob R., 2016, "The International
+Political Economy Data Resource", <https://doi.org/10.7910/DVN/X093TV>,
+Harvard Dataverse, V4
+
+<!--more-->
