@@ -20,7 +20,7 @@ The figure below plots the tariff treatment the US placed on imports from FTA pa
 
 ![Tariff Treatment](/images/ftariff/treatment_ticks.jpg)
 
-The next figure hone in on phased-out products and highlight the incredible variation in phaseout duration.[^2]
+The next figure hones in on phased-out products and highlights the incredible variation in phaseout duration.[^2]
 
 [^2]: Product codes that were already duty-free or treated with immediate elimination or exemption are grouped as "Other" to improve visibility.
 
