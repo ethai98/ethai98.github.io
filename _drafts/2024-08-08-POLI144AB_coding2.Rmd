@@ -34,25 +34,43 @@ Codebook](https://www.dropbox.com/scl/fi/ffeimy5337k79x3t1frx2/V-Dem-Codebook-v9
 
 <!--more-->
 
-\
-
-Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I.
-Lindberg, Jan Teorell, David Altman, Michael Bernhard, M. Steven Fish,
-Adam Glynn, Allen Hicken, Anna Lührmann, Kyle L. Marquardt, Kelly
-McMann, Pamela Paxton, Daniel Pemstein, Brigitte Seim, Rachel Sigman,
-Svend-Erik Skaaning, Jeffrey Staton, Agnes Cornell, Lisa Gastaldi,
-Haakon Gjerløw, Valeriya Mechkova, Johannes von Römer, Aksel Sundtröm,
-Eitan Tzelgov, Luca Uberti, Yi-tingWang, Tore Wig, and Daniel Ziblatt.
-2019. "V-Dem Codebook v9" Varieties of Democracy (V-Dem) Project.
+**Dataset Citation:** Coppedge, Michael, John Gerring, Carl Henrik
+Knutsen, Staffan I. Lindberg, Jan Teorell, David Altman, Michael
+Bernhard, M. Steven Fish, Adam Glynn, Allen Hicken, Anna Lührmann, Kyle
+L. Marquardt, Kelly McMann, Pamela Paxton, Daniel Pemstein, Brigitte
+Seim, Rachel Sigman, Svend-Erik Skaaning, Jeffrey Staton, Agnes Cornell,
+Lisa Gastaldi, Haakon Gjerløw, Valeriya Mechkova, Johannes von Römer,
+Aksel Sundtröm, Eitan Tzelgov, Luca Uberti, Yi-tingWang, Tore Wig, and
+Daniel Ziblatt. 2019. "V-Dem Codebook v9" Varieties of Democracy (V-Dem)
+Project.
 
 ## Load data
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.path = '../assets/images/')
+# define paths
+base.dir <- "~/Dropbox/Website/"
+base.url <- "/"
+fig.path <- "images/post/poli144ad_coding2/"
+
+# this is where figures will be sent
+paste0(base.dir, fig.path)
+
+# this is where markdown will point for figures
+paste0(base.url, fig.path)
+
+knitr::opts_knit$set(base.dir = base.dir, base.url = base.url)
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      fig.path = fig.path,
+                      fig.align = 'center',
+                      fig.width = 6,
+                      fig.height = 6,
+                      dpi = 300)
+
 ```
 
-
-```{r}
+```{r, message=FALSE, warning=FALSE}
 
 library(here)
 library(readr)
@@ -64,52 +82,56 @@ vdem<- read_csv("~/Dropbox/Teaching/SS2_2024_POLI144AB/Data/V-Dem Dataset.csv")
 
 ## Select our variables
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 vdem_cleaned <- vdem %>% 
   select(country_name, year, v2x_polyarchy, v2mecenefm) 
 ```
 
 ## Histogram
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 vdem_cleaned %>%
   ggplot(aes(x = v2x_polyarchy)) +
   geom_histogram()
 
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 vdem_cleaned %>%
   ggplot(aes(x = year, y = v2x_polyarchy, color = country_name)) +
   geom_line() +
-  theme(legend = "none")
+  theme(legend = "none") +
+  guides(color="none")
+# quite messy here!
 
+# let's take a summary across all countries for each year
 vdem_cleaned %>%
   group_by(year) %>%
   summarise(v2x_polyarchy_average = mean(v2x_polyarchy, na.rm = TRUE)) %>%
   ggplot(aes(x = year, y = v2x_polyarchy_average)) +
   geom_line()
+# that's better!
 ```
 
 ## Scatterplot
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 vdem_cleaned %>%
   ggplot(aes(x = v2x_polyarchy, y = v2mecenefm)) +
   geom_point() +
   geom_smooth(method = "lm")
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 lm(v2mecenefm ~ v2x_polyarchy,
    data = vdem_cleaned)
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 -1.575 + 4.479
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 vdem_global_mean <- vdem_cleaned %>%
   group_by(year) %>%
   summarise(v2x_polyarchy = mean(v2x_polyarchy, na.rm = TRUE)) %>%
@@ -129,7 +151,7 @@ vdem_cleaned %>%
 
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 
 vdem_cleaned %>%
   filter(country_name %in% c("United States of America", "Mexico", "Canada")) %>%
@@ -141,7 +163,7 @@ vdem_cleaned %>%
 
 ```
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(plotly)
 
 piechart_data = vdem_cleaned %>%

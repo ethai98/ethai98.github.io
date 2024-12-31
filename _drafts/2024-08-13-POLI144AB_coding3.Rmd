@@ -1,0 +1,161 @@
+---
+title: POLI 144AB Coding Workshop 3
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2024-08-13
+permalink: /posts/2024/poli144ab_coding3
+excerpt_separator: <!--more-->
+always_allow_html: false
+toc: false
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+  - data-manipulation
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+[R
+Script](https://www.dropbox.com/scl/fi/0sstwkux9dx3aw2gdjv2a/Workshop3.Rmd?rlkey=0wm7y03904vd12s74e130uojc&dl=0){:
+.btn--research}
+
+<!--more-->
+
+```{r setup, include=FALSE}
+
+# define paths
+base.dir <- "~/Dropbox/Website/"
+base.url <- "/"
+fig.path <- "images/post/poli144ad_coding3/"
+
+# this is where figures will be sent
+paste0(base.dir, fig.path)
+
+# this is where markdown will point for figures
+paste0(base.url, fig.path)
+
+knitr::opts_knit$set(base.dir = base.dir, base.url = base.url)
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      fig.path = fig.path,
+                      fig.align = 'center',
+                      fig.width = 6,
+                      fig.height = 6,
+                      dpi = 300)
+
+
+```
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+## Introduction
+
+Linear regression is a fundamental statistical method used to model the
+relationship between a dependent variable and one or more independent
+variables. In this lesson, we will cover the basics of linear
+regression, including how to implement it in R.
+
+### What is Linear Regression?
+
+Linear regression aims to find the best-fitting straight line through
+the data points, predicting the dependent variable (Y) from the
+independent variable(s) (X).
+
+#### Simple Linear Regression
+
+Simple linear regression involves one dependent variable and one
+independent variable. The model is represented as:
+
+$$Y = \beta_0 + \beta_1X + \epsilon$$
+
+-   $Y$ is the dependent variable.
+-   $X$ is the independent variable.
+-   $\beta_0$ is the intercept.
+-   $\beta_1$ is the slope of the line.
+-   $\epsilon$ is the error term.
+
+## Dataset
+
+For this lesson, we'll use the `mtcars` dataset available in R.
+
+```{r data, message=FALSE, warning=FALSE}
+# Load the dataset
+data(mtcars)
+force(mtcars)
+
+# Build the linear model
+# lm(dependent variable ~ independent variable)
+model_1 <- lm(mpg ~ wt, data = mtcars)
+model_2 <- lm(mpg ~ hp, data = mtcars)
+
+# Summary of the model
+summary(model_1)
+summary(model_2)
+
+# Plotting the data points
+mtcars %>%
+  ggplot(aes(x = wt, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = T)
+
+# Build the multiple linear regression model
+model_mult <- lm(mpg ~ wt + hp, data = mtcars)
+
+# Summary of the model
+summary(model_mult)
+
+```
+
+A one unit increase in HP (horse power) is correlated with 0.03177 units
+lower in mile per gallon and is statistically significant at \< 0.001
+level. A one unit increase in WT (weight) is correlated with 3.877 units
+lower in mile per gallon and is statistically significant at 0.001
+level.
+
+## Generating Predictions
+
+After building a linear regression model, we can use it to make
+predictions. We'll cover how to generate predictions for both the simple
+(bivariate) and multiple (multivariate) linear regression models.
+
+### Predictions with Simple Linear Regression
+
+Using the `model` we created earlier (predicting `mpg` based on `wt`),
+let's predict the `mpg` for a car that weighs 3,000 lbs.
+
+```{r prediction, message=FALSE, warning=FALSE}
+new_data <- data.frame(wt = 3)
+
+# Generate prediction
+
+predicted_mpg <- predict(model_1, newdata = new_data)
+
+# Output the prediction
+
+predicted_mpg
+
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm", col = "blue", se = FALSE) +
+  geom_point(aes(x = new_data$wt, y = predicted_mpg), color = "red", size = 3) +
+  geom_text(aes(x = new_data$wt, y = predicted_mpg, label = round(predicted_mpg, 2)), 
+            vjust = -1, color = "red") +
+  labs(title = "MPG vs Weight with Prediction",
+       x = "Car Weight (1000 lbs)",
+       y = "Miles Per Gallon") +
+  theme_minimal()
+
+
+
+```

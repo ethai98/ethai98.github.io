@@ -7,10 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-Eric Thai is a fifth-year Ph.D. candidate in Political Science at the University of California, San Diego, specializing in international political economy, particularly the politics surrounding trade agreement design, tariff phase-outs, and the role of interest groups. His research explores the intersection of international political economy, international organizations, and domestic politics. His dissertation, titled "The Political Economy of Tariff Phaseouts in Free Trade Agreements," examines (1) how the preferences of competing interest groups shape the design of tariff schedules across bilateral FTAs and (2) how the concentration of tariff phaseouts reacts to and shapes the political geography in the United States
+I am a fifth-year Ph.D. Candidate in Political Science at the [University of California, San Diego](https://polisci.ucsd.edu/). My research interests lie at the intersection of international political economy, international organizations, and domestic politics.
 
-As a first-generation immigrant from Vietnam with Cantonese cultural heritage, Eric is the first in his family to pursue a Ph.D. He earned a Bachelor of Arts in Political Science, summa cum laude, from the University of California, Davis. Eric's early life was split between Ho Chi Minh City/Saigon and the San Gabriel Valley, known locally as "the 626." 
+My dissertation explores tariff phaseouts (i.e., staging) as an understudied but highly granular form of flexibility in free trade agreements (FTAs). Particularly, I am interested in the political determinants and consequences of tariff phaseouts. My [**job market paper**](/files/pdf/research/Thai-JMP.pdf) demonstrates that the structure of US FTA tariff schedules can be explained not just by economic factors but also by the executives' interests in insulating themselves electorally. Having demonstrated the political incentive to allocate longer tariff phaseouts to industries concentrating in electorally competitive states, my research agenda now focuses on the effectiveness of phaseouts in mitigating the distributional consequences of trade and their potential political consequences.
 
-Eric has been a ceramic hobbyist in his free time since March 2023. He enjoys making and gifting ceramic goods to friends and family.
+My dissertation will also introduce [**FTariff**](/ftariff/), a novel dataset (co-developed with Elisabeth Van Lieshout) on the treatment of tariffs in the observable universe of bilateral free trade agreements. The database documents the treatment of thousands of unique product tariffs within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements, with future expansion to plurilateral agreements contingent on funding.
 
-[![Phaseout Duration](/images/phaseout_ticks.jpg)](/ftariff/)
+My research has received generous support from [The Institute for Humane Studies](https://www.theihs.org/) and an honorable mention by the National Science Foundation (NSF) Graduate Research Fellowship Program 2022 competition cycle.
+
+I graduated *summa cum laude* and received my B.A. in Political Science from the University of California, Davis. Growing up, neither my parents nor I had envisioned that I would be the first in the family to pursue a Ph.D. Knowing the difficulties all too well, I seek to lower the barrier of higher education for first-generation students, make political science accessible, and encourage more first-generation students to pursue a Ph.D. degree.
+
+In my free time, I enjoy making ceramics ([Instagram](https://www.instagram.com/ericthaiceramics/)), going to the AMC to watch new movies, and working out at the gym.

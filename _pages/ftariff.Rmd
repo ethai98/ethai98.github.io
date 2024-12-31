@@ -1,15 +1,27 @@
 ---
 permalink: /ftariff/
-title: "FTariff: Treatment of Tariffs in Free Trade Agreements (FTAs)"
+title: "FTariff: Free Trade Agreements Tariff Treatment"
 output:
   md_document:
     variant: gfm+footnotes
     preserve_yaml: TRUE
-knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author_profile: true
 ---
 
 **Authors:** Eric Thai (UCSD) and Elisabeth Van Lieshout (OECD)
 
-**FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements.
+**FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements. The database document the tariff treatment of thousands of unique products within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements (280 dyadic pairs) with future expansion to plurilateral agreements contingent on funding.
+
+I am fortunate to be working with 6 fantastic undergraduate research assistants in building upon Elisabeth's initial contribution, thanks to the UCSD Political Science Research Apprenticeship Program. They are: Harrison Burkholder, Ryan Coreya, Salvador Moedano, Brendan O'Connor, Muhammad Omer, and Tony Wu.
+
+The figure below plots the tariff treatment the US placed on imports from FTA partners. Each vertical line indicates one product code (8-digit HTS) and their associated treatment. The four main categories of tariff treatment are (1) Already Duty-Free, (2) Exempt, (3) Immediate, and (4) Phaseout.[^1]
+
+[^1]: "Other" indicates that the product's tariff reduction is governed by other means, such as pre-existing WTO commitment as was the case for many Jordanian imports. Numbers at the bottom demarcates sectors according to how the [US Harmonized Tariff Schedule](https://hts.usitc.gov/) groups HS chapters into "Sections."
+
+![Tariff Treatment](/images/ftariff/treatment_ticks.jpg)
+
+The next figure hone in on phased-out products and highlight the incredible variation in phaseout duration.[^2]
+
+[^2]: Product codes that were already duty-free or treated with immediate elimination or exemption are grouped as "Other" to improve visibility.
+
+![Phaseout Duration](/images/ftariff/phaseout_ticks.jpg)

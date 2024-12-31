@@ -1,0 +1,242 @@
+---
+title: POLI 144AB Coding Workshop 4
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2024-08-15
+permalink: /posts/2024/poli144ab_coding4
+excerpt_separator: <!--more-->
+always_allow_html: false
+toc: false
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+  - data-manipulation
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+[R
+Script](https://www.dropbox.com/scl/fi/o4bxw9g6xp599rpiah1qy/Workshop4.Rmd?rlkey=ti7q60m28k3ldp5kaoiw8zsev&dl=0){:
+.btn--research}
+
+[Data for Workshop
+4](https://www.dropbox.com/scl/fo/zt19v3b0gjmi9remppfou/ACLbSZiNEjWkcT9S66SC2pk?rlkey=9jcf5yavvcvnwyqpn27ft334k&dl=0){:
+.btn--research}
+
+<!--more-->
+
+
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# define paths
+base.dir <- "~/Dropbox/Website/"
+base.url <- "/"
+fig.path <- "images/post/poli144ad_coding4/"
+
+# this is where figures will be sent
+paste0(base.dir, fig.path)
+
+# this is where markdown will point for figures
+paste0(base.url, fig.path)
+
+knitr::opts_knit$set(base.dir = base.dir, base.url = base.url)
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      fig.path = fig.path,
+                      fig.align = 'center',
+                      fig.width = 6,
+                      fig.height = 6,
+                      dpi = 300)
+```
+
+
+## Load Shape Data
+
+```{r message=FALSE, warning=FALSE}
+# install sf to make maps
+# install.packages("sf")
+
+library(sf)
+library(tidyverse)
+library(here)
+
+state_shape <- st_read(here("../Teaching/SS2_2024_POLI144AB/Data/August15_Data/US States Shape Files", "tl_2012_us_state.shp")) 
+
+county_shape <- st_read(here("../Teaching/SS2_2024_POLI144AB/Data/August15_Data/US County Shape Files", "cb_2018_us_county_500k.shp")) 
+
+census_pop <- readRDS(here("../Teaching/SS2_2024_POLI144AB/Data/August15_Data", "census_pop_1990_2019_cleaned.rds"))
+
+manufacturing_emp <- readRDS(here("../Teaching/SS2_2024_POLI144AB/Data/August15_Data", "manufacturing_emp.rds"))
+
+president_vote <- read_csv(here("../Teaching/SS2_2024_POLI144AB/Data/August15_Data", "1976-2020-president.csv"))
+
+```
+
+## Population 1990 vs 2016
+```{r message=FALSE, warning=FALSE}
+census_pop_cleaned <- census_pop %>%
+  group_by(fipstate, year) %>%
+  summarise(pop = sum(pop, na.rm=T)) %>%
+  ungroup() %>%
+  filter(year == 1990 | year == 2016)
+```
+
+```{r message=FALSE, warning=FALSE}
+census_pop_cleaned %>%
+  left_join(state_shape, by=c("fipstate" = "STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii"))
+```
+
+```{r message=FALSE, warning=FALSE}
+census_pop_cleaned %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = pop), color = "grey5") +
+  facet_grid(rows=vars(year)) 
+```
+
+```{r message=FALSE, warning=FALSE}
+# customize! 
+census_pop_cleaned %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>%
+  mutate(pop_100000 = pop / 100000) %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = pop_100000), color = "grey5") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),    # Remove x-axis text
+        axis.text.y = element_blank(),    # Remove y-axis text
+        axis.title.x = element_blank(),   # Remove x-axis title
+        axis.title.y = element_blank(),   # Remove y-axis title
+        axis.ticks = element_blank(),     # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size=6)) +
+  # change the color
+  scale_fill_viridis_c() +
+  labs(title = "Population Per 100000",
+       fill = "") +
+  facet_grid(rows=vars(year))
+
+```
+
+## Manufacturing Employment in 1990 vs 2016
+```{r message=FALSE, warning=FALSE}
+# customize! 
+manufacturing_emp %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>% 
+  filter(year == 1990 | year == 2016) %>%
+  mutate(manufacturing_emp = manufacturing_emp / 10000) %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = manufacturing_emp), color = "grey5") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),    # Remove x-axis text
+        axis.text.y = element_blank(),    # Remove y-axis text
+        axis.title.x = element_blank(),   # Remove x-axis title
+        axis.title.y = element_blank(),   # Remove y-axis title
+        axis.ticks = element_blank(),     # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size=6)) +
+  # change the color
+  scale_fill_viridis_c() +
+  labs(title = "Manufacturing Employment Per 10000",
+       fill = "") +
+  facet_grid(rows=vars(year))
+
+```
+
+## Manufacturing Proportion 1990 vs 2016
+```{r message=FALSE, warning=FALSE}
+# customize! 
+manufacturing_emp %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>% 
+  filter(year == 1990 | year == 2016) %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = manufacturing_emp_prop), color = "grey5") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),    # Remove x-axis text
+        axis.text.y = element_blank(),    # Remove y-axis text
+        axis.title.x = element_blank(),   # Remove x-axis title
+        axis.title.y = element_blank(),   # Remove y-axis title
+        axis.ticks = element_blank(),     # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size=6)) +
+  # change the color
+  scale_fill_viridis_c() +
+  labs(title = "Manufacturing Employment Prop",
+       fill = "") +
+  facet_grid(rows=vars(year))
+
+```
+
+## Presidential Election 2016: Hillary Clinton's Vote Share
+
+```{r}
+president_vote %>%
+  # put 0s before 1 digit state_fips to be able to merge
+  mutate(fipstate = sprintf("%02d", state_fips)) %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>% 
+  filter(year == 2016 & party_detailed == "DEMOCRAT") %>%
+  mutate(vote_prop = candidatevotes / totalvotes) %>%
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = vote_prop), color = "grey5") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),    # Remove x-axis text
+        axis.text.y = element_blank(),    # Remove y-axis text
+        axis.title.x = element_blank(),   # Remove x-axis title
+        axis.title.y = element_blank(),   # Remove y-axis title
+        axis.ticks = element_blank(),     # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size=6)) +
+  # change the color
+  scale_fill_viridis_c() +
+  labs(title = "2016 Vote Share of Hillary Clinton",
+       fill = "") +
+  facet_grid(rows=vars(year))
+```
+
+```{r message=FALSE, warning=FALSE}
+president_vote %>%
+  filter(year == 2016) %>%
+  filter(party_detailed %in% c("REPUBLICAN", "DEMOCRAT")) %>%
+  group_by(state) %>%
+  mutate(two_party_vote_share = candidatevotes / sum(candidatevotes, na.rm=T)) %>%
+  ungroup() %>%
+  filter(candidate == "CLINTON, HILLARY") %>%
+  mutate(fipstate = sprintf("%02d", state_fips)) %>%
+  left_join(state_shape, by=c("fipstate"="STATEFP")) %>%
+  filter(!NAME %in% c("Alaska", "Hawaii")) %>% 
+  ggplot() +
+  geom_sf(aes(geometry = geometry, fill = two_party_vote_share), color = "grey5") +
+  theme_bw() +
+  theme(axis.text.x = element_blank(),    # Remove x-axis text
+        axis.text.y = element_blank(),    # Remove y-axis text
+        axis.title.x = element_blank(),   # Remove x-axis title
+        axis.title.y = element_blank(),   # Remove y-axis title
+        axis.ticks = element_blank(),     # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        legend.text = element_text(size=6)) +
+  # change the color
+  scale_fill_viridis_c() +
+  labs(title = "2016 Vote Share of Hillary Clinton",
+       fill = "") 
+
+```
+

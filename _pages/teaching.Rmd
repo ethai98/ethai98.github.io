@@ -6,16 +6,27 @@ author_profile: true
 
 <!-- [teaching statement] -->
 
+## Office Hours
+
+Office: SSB 324
+
+-   Winter Quarter 2025: [TBD]
+
 ## *Associate Instructor* for the University of California, San Diego
 
--   POLI 12: Introduction to International Relations (Summer Session 1, 2024)
+-   **POLI 12: Introduction to International Relations** (Summer Session 1, 2024)
 
     -   [Syllabus](/files/pdf/teaching/poli12_syllabus_ss1_2024.pdf)
 
--   POLI 144AB: Special Topics in International Political Economy: Trade and US Politics (Summer Session 2, 2024)
+-   **POLI 144AB: Special Topics in International Political Economy: Trade and US Politics** (Summer Session 2, 2024)
 
     -   [Syllabus](/files/pdf/teaching/poli144AB_syllabus_ss2_2024.pdf)
+    -   Coding Workshop
+        -   [1: Basic Data Cleaning](/posts/2024/poli144ab_coding1)
+        -   [2: Data Visualization](/posts/2024/poli144ab_coding2)
+        -   [3: Basic Regression](/posts/2024/poli144ab_coding3)
+        -   [4: Maps](/posts/2024/poli144ab_coding4)
 
--   POLI 12: Introduction to International Relations (Spring Quarter, 2025)
+-   **POLI 12: Introduction to International Relations** (Spring Quarter, 2025)
 
     -   Syllabus (Work in Progress)
