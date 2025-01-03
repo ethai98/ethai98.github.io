@@ -68,7 +68,7 @@ separate HTS codes to describe the same traded good? What is the
 difference between A and D staging?
 
 | HTS8     | Description                                                                    | Base Rate    | Staging Category |
-|------------------|--------------------|------------------|------------------|
+|----------|--------------------------------------------------------------------------------|--------------|------------------|
 | 02011005 | Bovine carcasses and halves, fresh or chld., descr. in gen. note 15 of the HTS | 4.4 cents/kg | A                |
 | 02011010 | Bovine carcasses and halves, fresh or chld., descr. in add. US note 3 to Ch. 2 | 4.4 cents/kg | D                |
 
@@ -134,7 +134,7 @@ quota on Korean bovine carcasses and halves. The tariff on the two
 bovine variants would look something like this:
 
 | HTS      | Year 1        | Year 2        | Year 3        | Year 4        | Year 5    |
-|------------|------------|------------|------------|------------|------------|
+|----------|---------------|---------------|---------------|---------------|-----------|
 | 02011005 | 0 cent/kg     |               |               |               |           |
 | 02011010 | 3.52 cents/kg | 2.64 cents/kg | 1.76 cents/kg | 0.88 cents/kg | 0 cent/kg |
 
