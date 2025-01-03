@@ -12,7 +12,7 @@ author_profile: true
 
 **FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements. The database document the tariff treatment of thousands of unique products within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements (280 dyadic pairs) with future expansion to plurilateral agreements contingent on funding.
 
-I am fortunate to be working with 6 fantastic undergraduate research assistants in building upon Elisabeth's initial contribution, thanks to the UCSD Political Science Research Apprenticeship Program. They are: Harrison Burkholder, Ryan Coreya, Salvador Moedano, Brendan O'Connor, Muhammad Omer, and Tony Wu.
+I am fortunate to be working with 6 fantastic undergraduate research assistants in building upon Elisabeth's initial contribution, thanks to the UCSD Political Science Research Apprenticeship Program. They are: Harrison Burkholder, [Ryan Coryea](https://www.linkedin.com/in/ryan-coryea-39b507240/), Salvador Moedano, Brendan O'Connor, Muhammad Omer, and Tony Wu.
 
 The figure below plots the tariff treatment the US placed on imports from FTA partners. Each vertical line indicates one product code (8-digit HTS) and their associated treatment. The four main categories of tariff treatment are (1) Already Duty-Free, (2) Exempt, (3) Immediate, and (4) Phaseout.[^1]
 
