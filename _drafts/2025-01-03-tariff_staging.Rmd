@@ -22,53 +22,70 @@ editor_options:
 
 <!--more-->
 
-**Quick Background:** Regional trade agreements (RTAs) have proliferated
-seven-folds since the WTO Uruguay Round concluded in 1995. The WTO
-reports that there are about 373 regional trade agreements currently in
-force (whereas only 45 in 1995), although the number of "preferential"
-trade agreement has gone beyond 730 ([Dür et al. 2014](#0)).
+There are about 373 free trade agreements (FTAs) currently in force
+according to the
+[WTO](https://rtais.wto.org/UI/PublicMaintainRTAHome.aspx).[^1] Common
+among all agreements is the tariff schedule that details every product
+codes and how tariffs are to be eliminated. For example, take a look at
+the US's [tariff
+schedule](https://ustr.gov/sites/default/files/uploads/agreements/fta/korus/Annex_2-B-1_US_Tariff_Schedule.pdf)
+toward South Korean imports from the US-Korea FTA (i.e., KORUS). Here,
+there are four columns:
 
-> Preferential trade agreements or "PTAs" are often used in the trade
-> agreement literature and they broadly describe any preferential
-> arrangement on trade between two or more countries. PTAs include (1)
-> limited scope agreements, which liberalize only a small number of
-> sectors and sometimes do not fully eliminate trade barriers for those
-> sectors (e.g., [US-Japan trade
-> agreement](https://ustr.gov/countries-regions/japan-korea-apec/japan/us-japan-trade-agreement-negotiations/us-japan-trade-agreement-text));
-> (2) services agreements, which liberalize barriers to trade on
-> services, not on goods (e.g., [ASEAN Trade in Services Agreement
-> (ATISA)](https://agreement.asean.org/media/download/20201111041414.pdf);
-> (3) customs unions, which eliminate trade barriers and establish a
-> common external tariff system (e.g., EU, MERCOSUR); and (4) free trade
-> agreements (FTAs), which eliminate substantially all trade barriers
-> (e.g., NAFTA, KORUS).
->
-> In terms of trade in goods, only customs unions and FTAs are
-> authorized by/compliant with the WTO (See [GATT Article
-> XXIV](https://www.wto.org/english/tratop_e/region_e/region_art24_e.htm)),
-> hence the smaller number in RTAs reported by the WTO. On the other
-> hand, services agreements are authorized under ([GATS Article
-> V](https://www.wto.org/english/res_e/publications_e/ai17_e/gats_art5_jur.pdf)).
+[^1]: Free trade agreements are also known as "regional" trade
+    agreements (RTAs). RTAs have proliferated seven-folds since the WTO
+    Uruguay Round concluded in 1995. The WTO reports that there are
+    about 373 regional trade agreements currently in force (whereas only
+    45 in 1995), although the number of "preferential" trade agreement
+    has gone beyond 730 ([Dür et al. 2014](#0)).
 
-------------------------------------------------------------------------
+    Preferential trade agreements or "PTAs" are often used in the trade
+    agreement literature and they broadly describe any preferential
+    arrangement on trade between two or more countries. PTAs include (1)
+    limited scope agreements, which liberalize only a small number of
+    sectors and sometimes do not fully eliminate trade barriers for
+    those sectors (e.g., [US-Japan trade
+    agreement](https://ustr.gov/countries-regions/japan-korea-apec/japan/us-japan-trade-agreement-negotiations/us-japan-trade-agreement-text));
+    (2) services agreements, which liberalize barriers to trade on
+    services, not on goods (e.g., [ASEAN Trade in Services Agreement
+    (ATISA)](https://agreement.asean.org/media/download/20201111041414.pdf);
+    (3) customs unions, which eliminate trade barriers and establish a
+    common external tariff system (e.g., EU, MERCOSUR); and (4) free
+    trade agreements (FTAs), which eliminate substantially all trade
+    barriers (e.g., NAFTA, KORUS).
 
-When talking about agreements that liberalize trade in goods, a common
-element in most agreements is the tariff schedule. Tariff schedules list
-every product code, their description, MFN base rates, and
-***staging***. For example, take a look at the US-Korea FTA (i.e.,
-KORUS) [tariff
-schedule](https://ustr.gov/sites/default/files/uploads/agreements/fta/korus/Annex_2-B-1_US_Tariff_Schedule.pdf).
+    In terms of trade in goods, only customs unions and FTAs are
+    authorized by/compliant with the WTO (See [GATT Article
+    XXIV](https://www.wto.org/english/tratop_e/region_e/region_art24_e.htm)),
+    hence the smaller number in RTAs reported by the WTO. On the other
+    hand, services agreements are authorized under ([GATS Article
+    V](https://www.wto.org/english/res_e/publications_e/ai17_e/gats_art5_jur.pdf)).
+
+1.  **HTS 8:** lists the 8-digit product codes that are specific to the
+    US (the first 6 are internationally harmonized).
+
+2.  **Description:** provides, well, the description of the specific
+    product code.
+
+3.  **Base Rate:** lists the
+    [most-favored-nation](https://www.wto.org/english/res_e/webcas_e/ltt_e/ltt1_e.htm)
+    (MFN) rate for each product at the time of negotiation.[^2]
+
+4.  **Staging Category:** lists the staging category for each product.
+
+[^2]: The US's version of MFN rates is called *normal trading relations
+    (NTR) rates.*
 
 <img src="/images/ftariff/USA_KOR_schedule.png" style="display: block; margin: auto;"/>
 
 Immediately, any reader would be confused about what any of the "staging
-category" actually means. Why do "bovine carcasses and halves fresh or
-chilled" have two separate staging categories? Why do we even have two
-separate HTS codes to describe the same traded good? What is the
-difference between A and D staging?
+category" actually means. Why does "bovine carcasses and halves fresh or
+chilled" product have two separate staging categories? Why do we even
+have two separate HTS codes to describe the same traded good? What is
+the difference between A and D staging?
 
 | HTS8     | Description                                                                    | Base Rate    | Staging Category |
-|----------|--------------------------------------------------------------------------------|--------------|------------------|
+|------------------|-------------------|------------------|------------------|
 | 02011005 | Bovine carcasses and halves, fresh or chld., descr. in gen. note 15 of the HTS | 4.4 cents/kg | A                |
 | 02011010 | Bovine carcasses and halves, fresh or chld., descr. in add. US note 3 to Ch. 2 | 4.4 cents/kg | D                |
 
@@ -100,13 +117,13 @@ OK, now that we have figured out what each of the staging categories
 means, let's dive into what makes these two product codes different. For
 02011005, the general note defines the import of bovine carcasses and
 halves not to be counted against the quantity of the tariff-rate quota
-if it is imported for non-commercial use.[^1] On the other hand,
+if it is imported for non-commercial use.[^3] On the other hand,
 02011010 specifies the maximum amount of bovine carcasses and halves in
 metric tons allowed to be entered into the US (presumably for commercial
 use). The note also includes a table of the quantities allowance for
 specific trade partners.
 
-[^1]: For example, the rule applies if the product imported by or for
+[^3]: For example, the rule applies if the product imported by or for
     the account for any US agency (a); imported for personal use,
     provided that it does not exceed 5 kilograms (b); or it is imported
     not for commercial purposes, but "as samples for taking orders, for
@@ -134,7 +151,7 @@ quota on Korean bovine carcasses and halves. The tariff on the two
 bovine variants would look something like this:
 
 | HTS      | Year 1        | Year 2        | Year 3        | Year 4        | Year 5    |
-|----------|---------------|---------------|---------------|---------------|-----------|
+|------------|------------|------------|------------|------------|------------|
 | 02011005 | 0 cent/kg     |               |               |               |           |
 | 02011010 | 3.52 cents/kg | 2.64 cents/kg | 1.76 cents/kg | 0.88 cents/kg | 0 cent/kg |
 
@@ -147,7 +164,7 @@ importing 65,005 metric tons worth of bovine carcasses each year after
 KORUS enters into force versus before? The table below calculates the
 dollar amount that would be collected by customs.
 
-| Year   | Tariff Revenue[^2] from 02011010 |
+| Year   | Tariff Revenue[^4] from 02011010 |
 |--------|----------------------------------|
 | Year 0 | \$2,860,220.                     |
 | Year 1 | \$2,288,176                      |
@@ -156,7 +173,7 @@ dollar amount that would be collected by customs.
 | Year 4 | \$572,044                        |
 | Year 5 | 0                                |
 
-[^2]: 1 metric ton = 1000 kg. Hence, 65,005 metric tons = 65005000 kg.
+[^4]: 1 metric ton = 1000 kg. Hence, 65,005 metric tons = 65005000 kg.
 
 ------------------------------------------------------------------------
 
