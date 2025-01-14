@@ -8,7 +8,7 @@ output:
 author_profile: true
 ---
 
-**Authors:** Eric Thai (UCSD) and Elisabeth Van Lieshout (OECD)
+**Authors:** Eric Thai (UCSD) and [Elisabeth Van Lieshout](https://elieshout.com/) (OECD)
 
 **FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements. The database document the tariff treatment of thousands of unique products within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements (280 dyadic pairs) with future expansion to plurilateral agreements contingent on funding.
 
