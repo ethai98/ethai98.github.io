@@ -1,0 +1,25 @@
+---
+title: Understanding Trump's Tariff Plan
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2025-01-14
+permalink: /posts/2025/trump-tariff-phasein
+excerpt_separator: <!--more-->
+always_allow_html: false
+toc: false
+header:
+tags:
+  - tariff
+  - trump
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+
+
+<!--more-->
