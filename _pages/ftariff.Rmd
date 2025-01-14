@@ -1,6 +1,6 @@
 ---
 permalink: /ftariff/
-title: "FTariff: Free Trade Agreements Tariff Treatment"
+title: "PTariff: Preferential Trade Agreements Tariff Treatment"
 output:
   md_document:
     variant: gfm+footnotes
@@ -10,7 +10,7 @@ author_profile: true
 
 **Authors:** Eric Thai (UCSD) and [Elisabeth Van Lieshout](https://elieshout.com/) (OECD)
 
-**FTariff** is one of the first comprehensive dataset on tariff treatment in free trade agreements. The database document the tariff treatment of thousands of unique products within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements (280 dyadic pairs) with future expansion to plurilateral agreements contingent on funding.
+**PTariff** is one of the first comprehensive dataset on tariff treatment in preferentia trade agreements. The database document the tariff treatment of thousands of unique products within each agreement at the tariff line level (8-digit). In total, we expect to collect tariff treatment data for more than 140 bilateral free trade agreements (280 dyadic pairs) with future expansion to plurilateral agreements contingent on funding.
 
 I am fortunate to be working with 6 fantastic undergraduate research assistants in building upon Elisabeth's initial contribution, thanks to the UCSD Political Science Research Apprenticeship Program. They are: Harrison Burkholder, [Ryan Coryea](https://www.linkedin.com/in/ryan-coryea-39b507240/), Salvador Moedano, Brendan O'Connor, [Muhammad Omer](https://www.linkedin.com/in/muhammad-a-omer/), and [Tony Wu](https://linkedin.com/in/yutongtonywu/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app).
 
