@@ -18,4 +18,4 @@ author_profile: true
 >
 > **Keywords:** tariffs, trade agreements, US politics, particularistic president
 
-[Working Paper](/files/pdf/research/Thai-JMP.pdf){: .btn--research}
+[Working Paper](/files/pdf/research/Thai-JMP.pdf){: .btn--research} [Poster](/files/pdf/research/Thai-JMP-poster.pdf){: .btn--research}
