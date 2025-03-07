@@ -15,6 +15,8 @@ My dissertation will also introduce [PTariff](/ftariff/), a novel dataset (co-de
 
 My research has received generous support from [The Institute for Humane Studies](https://www.theihs.org/) and an honorable mention by the National Science Foundation (NSF) Graduate Research Fellowship Program 2022 competition cycle.
 
-I graduated *summa cum laude* and received my B.A. in Political Science from the University of California, Davis. Growing up, neither my parents nor I had envisioned that I would be the first in the family to pursue a Ph.D. Knowing the difficulties all too well, I seek to lower the barrier of higher education for first-generation students, make political science accessible, and encourage more first-generation students to pursue a Ph.D. degree. My [personal statement](/_personal_statement/) (originally written in submission for a diversity pre-doctoral fellowship) paint a brief picture of my journey as a first-generation Ph.D. student.
+I graduated *summa cum laude* and received my B.A. in Political Science from the University of California, Davis. Growing up, neither my parents nor I had envisioned that I would be the first in the family to pursue a Ph.D. Knowing the difficulties all too well, I seek to lower the barrier of higher education for first-generation students, make political science accessible, and encourage more first-generation students to pursue a Ph.D. degree.
+
+My [personal statement](/_personal_statement/) (originally written in submission for a diversity pre-doctoral fellowship) paints a brief picture of my journey as a first-generation Ph.D. student.
 
 In my free time, I enjoy making ceramics ([Instagram](https://www.instagram.com/ericthaiceramics/)), watching movies and TV shows, traveling, and working out at the gym.
