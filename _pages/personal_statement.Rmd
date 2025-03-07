@@ -8,7 +8,7 @@ output:
 author_profile: true
 ---
 
-*Background: I wrote this personal statement as a submission to the MIT SHASS Pre-doctoral Fellowship in February 2025. Unfortunately, the program was suspended after submission (probably as a result of anti-DEI policies propagating from the Trump Administration). Despite feeling a profound sense of disappointment that such an opportunity is withdrawn and the fact that my story went unseen, I am proud of this particular statement. At this moment in time, I believe that these are the best 900 words I have written in my lifetime, encapsulating my story as a first-generation graduate student.*
+*Background: I wrote this personal statement as a submission to a Pre-doctoral Fellowship in February 2025. Unfortunately, the program was suspended after submission (probably as a result of anti-DEI policies propagating from the Trump Administration). Despite feeling a profound sense of disappointment that such an opportunity is withdrawn and the fact that my story went unseen, I am proud of this particular statement. At this moment in time, I believe that these are the best 900 words I have written in my lifetime, encapsulating my story as a first-generation graduate student.*
 
 ------------------------------------------------------------------------
 
