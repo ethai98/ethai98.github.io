@@ -1,0 +1,33 @@
+---
+permalink: /personal_statement/
+title: "Personal Statement"
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+author_profile: true
+---
+
+*Background: I wrote this personal statement as a submission to the MIT SHASS Pre-doctoral Fellowship in February 2025. Unfortunately, the program was suspended after submission (probably as a result of anti-DEI policies propagating from the Trump Administration). Despite feeling a profound sense of disappointment that such an opportunity is withdrawn and the fact that my story went unseen, I am proud of this particular statement. At this moment in time, I believe that these are the best 900 words I have written in my lifetime, encapsulating my story as a first-generation graduate student.*
+
+------------------------------------------------------------------------
+
+My peers would give me blank stares whenever I mentioned that pursuing a Ph.D. is a privilege. There would be no nods of affirmation, no “mmm”s, no attempts to relate—nothing to signal that they have had the same thoughts or faced similar circumstances.
+
+I am not the picture-perfect stereotype of privilege. I am not white, straight, middle class, or native to the United States, nor do I have college-educated parents. I am a Cantonese-Vietnamese-American, working-class, first-generation college student, and a member of the LGBTQIA+ community.
+
+Despite my dislike for brandishing my minoritized traits, I feel particularly privileged because of my context. What a privilege it is to spend my 20s reading, theorizing, collecting and analyzing data, and writing as opposed to begging for 5 PM to come sooner, feeling drained after work, and fearing for the security of my job in corporate America. Indeed, I feel fortunate to have found a career that energizes me, one that keeps my brain active, perplexed, and at times tangled, and provides unparalleled flexibility in how I spend my time.
+
+Academia is a privileged and noble career because many first-generation college students with working-class immigrant parents often do not have the opportunity to pursue knowledge as a career or even imagine that such an opportunity exists; their purpose for going to college is to supplement their family’s income – and bragging rights if they go to an Ivy Leagues or other big name schools. End of story.
+
+Call it filial piety, return on investment, or paying back college tuition. Children of immigrants or immigrants themselves often do not pursue a career in the academy because of the competing pressure to provide. I somehow escaped this trap by paying for college myself with financial aid, loans, and on-campus part-time employment. But as if it’s within my blood that I cannot shake away the obligation to financially support my family as they near retirement, nor do I want to relinquish it.
+
+As I come to the end of my supposed five-year stint at UC San Diego, questions about when I will graduate started piling up, and with it comes the heavy burden of showing for what I’ve poured my youth into. While it takes six years for most to complete their Ph.D., my parents often lament about how much I have “studied”—unable to grasp what “research” is. I suppose it is not their fault for not understanding. I am muted by our language barrier; my elementary Cantonese has been insufficient to convey what it means to me to be able to contribute new insight into the world, especially on trade policies that once adversely affected their livelihood.
+
+At 21 and 23, my mom and dad settled down in Los Angeles after spending seven months in refugee camps in the Philippines with nothing to their name except for their years in sweatshops. Sewing became their main source of income; we would often drive past a dilapidated building near Chinatown that once was a symbol of a new beginning and stability despite the exploitative conditions. This symbol quickly died when the North American Free Trade Agreement (NAFTA) was implemented, incentivizing employers to offshore jobs abroad. Their financial hardship shaped who I am and what I study.
+
+Never having completed their high school education, they understood not just the material but also the normative value of knowledge as they reflected on their own barriers to learning and the doors bolted by the lack of schooling standing between them and opportunities. In an attempt to inspire me to take high school seriously, my dad once said, “your knowledge is your own. No one can ever take it away” (roughly translated from Cantonese).
+
+This wisdom – the idea that knowledge cannot be expropriated or stolen – transcends beyond his years in primary and secondary schooling and highlights the real value of education and the pursuit of knowledge. Since then, I learn, “study,” and contribute to the academic discipline not to please my parents, but to fulfill my own passion, knowing that the normative gains cannot be expropriated.
+
+Their experience with NAFTA also shaped my research agenda. In particular, I study tariff staging, an obscure and niche feature ubiquitous in free trade agreements, with only a handful of scholarly works addressing it directly. Essentially, every product tariff, such as sugar, sweaters, and that semiconductor chip that is in every piece of technology, can be phased out over 10, 15, or 20 years when a country enters a free trade agreement with another country. Doing so allows not only domestic workers time to adjust (build new skills and pursue new vocation) but also helps facilitate cooperation on free trade. My hope is to demonstrate that phasing out tariffs can ease trade liberalization without leaving people like my parents unemployed overnight due to companies’ incentives to offshore production.
