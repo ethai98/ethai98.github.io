@@ -1,5 +1,5 @@
 ---
-permalink: /ftariff/
+permalink: /ptariff/
 title: "PTariff: Preferential Trade Agreements Tariff Treatment"
 output:
   md_document:

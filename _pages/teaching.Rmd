@@ -8,17 +8,19 @@ author_profile: true
 
 ## Office Hours
 
-Winter Quarter 2025 (POLI 142J: National Security Policy)
+Spring Quarter 2025 (POLI 12: Introduction to International Relations)
 
--   Friday 10:15 - 11:15 AM ([Sign Up Here](https://calendly.com/ethai/officehours)) or by appointment (email ethai@ucsd.edu)
+-   In Person Office Hours: Monday and Wednesday 11 AM - 12:00 PM
 
--   Office: SSB 324
+    -   Office: SSB 324
+
+-   Virtual Office Hours: Tuesday by Appointment ([Sign Up Here](https://calendly.com/ethai/officehours))
 
 ## *Associate Instructor* for the University of California, San Diego
 
--   **POLI 12: Introduction to International Relations** (Summer Session 1, 2024)
+-   **POLI 12: Introduction to International Relations** (Spring Quarter, 2025)
 
-    -   [Syllabus](/files/pdf/teaching/poli12_syllabus_ss1_2024.pdf)
+    -   Syllabus (Work in Progress)ß
 
 -   **POLI 144AB: Special Topics in International Political Economy: Trade and US Politics** (Summer Session 2, 2024)
 
@@ -29,6 +31,6 @@ Winter Quarter 2025 (POLI 142J: National Security Policy)
         -   [3: Basic Regression](/posts/2024/poli144ab_coding3)
         -   [4: Maps](/posts/2024/poli144ab_coding4)
 
--   **POLI 12: Introduction to International Relations** (Spring Quarter, 2025)
+-   **POLI 12: Introduction to International Relations** (Summer Session 1, 2024)
 
-    -   Syllabus (Work in Progress)
+    -   [Syllabus](/files/pdf/teaching/poli12_syllabus_ss1_2024.pdf)
