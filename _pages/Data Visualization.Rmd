@@ -8,7 +8,7 @@ output:
 author_profile: true
 ---
 
-### [Industry Employment Trends](https://www.dropbox.com/scl/fo/bdhgm7il4otepfkvfnbha/AGqGXKnE01AdCsijTKgB5O0?rlkey=9br2ab2wf0nuqxmx87ocehztw&st=xnzi1pt9&dl=0)
+## [Industry Employment Trends](https://www.dropbox.com/scl/fo/bdhgm7il4otepfkvfnbha/AGqGXKnE01AdCsijTKgB5O0?rlkey=9br2ab2wf0nuqxmx87ocehztw&st=xnzi1pt9&dl=0)
 
 The linked Dropbox folder contains the employment trends of all 978 NAICS industry codes.
 
@@ -18,8 +18,18 @@ The linked Dropbox folder contains the employment trends of all 978 NAICS indust
 
 -   Plot C graphs box-plots of employment count for every year where data is available.
 
-**Ex. Winery Industry (NAICS 312130)**
+**E.g., Winery Industry (NAICS 312130)**
 
 ![Wineries](/images/interesting_data/312130%20Wineries.png)
 
 **Data source:** Eckert, Fabian, Teresa Fort, Peter Schott, and Natalie Yang. 2020. *Imputing Missing Values in the US Census Bureau’s County Business Patterns*. Cambridge, MA: National Bureau of Economic Research. [doi:[10.3386/w26632](doi:%5B10.3386/w26632){.uri}](https://doi.org/10.3386/w26632).
+
+------------------------------------------------------------------------
+
+## [Trends of Congressional Speeches](https://www.dropbox.com/scl/fo/zqt1j5kf7q4nv4p5329u7/AKC2LxbS4eD1rCWYOIDllXQ?rlkey=3bdf2xmnyumbqk9280c8mr010&st=ggy61m8v&dl=0)
+
+The linked Dropbox folder contains the trends of trade-issue related mentions in Congressional Speeches from the 97th to 114th Congress.
+
+**E.g., Trends of WTO mentions** ![WTO](/images/interesting_data/wto_trend.jpg)
+
+**Data source:** Gentzkow, Matthew, Jesse M. Shapiro, and Matt Taddy. 2018. “Congressional Record for the 43rd-114th Congresses: Parsed Speeches and Phrase Counts.” <https://data.stanford.edu/congress_text> (May 8, 2025).
