@@ -1,0 +1,25 @@
+---
+permalink: /data/
+title: "Interesting Data"
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+author_profile: true
+---
+
+### [Industry Employment Trends](https://www.dropbox.com/scl/fo/bdhgm7il4otepfkvfnbha/AGqGXKnE01AdCsijTKgB5O0?rlkey=9br2ab2wf0nuqxmx87ocehztw&st=xnzi1pt9&dl=0)
+
+The linked Dropbox folder contains the employment trends of all 978 NAICS industry codes.
+
+-   Plot A graphs box-plots of industry employment in each US state as a share of total industry employment across US states for every year where data is available.
+
+-   Plot B graphs box-plots of industry employment in each US state as a share of total state employment for every year where data is available.
+
+-   Plot C graphs box-plots of employment count for every year where data is available.
+
+**Ex. Winery Industry (NAICS 312130)**
+
+![Wineries](/images/interesting_data/312130%20Wineries.png)
+
+**Data source:** Eckert, Fabian, Teresa Fort, Peter Schott, and Natalie Yang. 2020. *Imputing Missing Values in the US Census Bureau’s County Business Patterns*. Cambridge, MA: National Bureau of Economic Research. [doi:[10.3386/w26632](doi:%5B10.3386/w26632){.uri}](https://doi.org/10.3386/w26632).

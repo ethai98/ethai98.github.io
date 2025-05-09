@@ -17,4 +17,4 @@ My research has received generous support from [The Institute for Humane Studies
 
 I graduated *summa cum laude* and received my B.A. in Political Science from the University of California, Davis. Growing up, neither my parents nor I had envisioned that I would be the first in the family to pursue a Ph.D. Knowing the difficulties all too well, I seek to lower the barrier of higher education for first-generation students, make political science accessible, and encourage more first-generation students to pursue a Ph.D. degree.
 
-In my free time, I enjoy making ceramics ([Instagram](https://www.instagram.com/ericthaiceramics/)), watching movies and TV shows, traveling, and working out at the gym.
+In my free time, I enjoy making ceramics ([Instagram](https://www.instagram.com/ericthaiceramics/)), watching movies and TV shows, traveling, running, and working out at the gym.
