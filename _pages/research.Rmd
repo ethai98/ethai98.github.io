@@ -10,12 +10,14 @@ author_profile: true
 
 ## Working Papers
 
-### The Strategic Use of Tariff Phaseouts in US Free Trade Agreements
+### Courting the Median: Strategic President and the Distribution of Temporary Protection in U.S. Free Trade Agreements
 
-\*Presented at IHS Trade Symposium (Harvard, July 2024); GSIPE APSA 2024 Pre-Conference and APSA 2024 (Philadelphia, September 2024); GSIPE Fall 2024 Virtual Webinar (October 2024), PEIO (Harvard, January 2025), and ISA (Chicago, March 2025).
+\*Previous versions presented at IHS Trade Symposium (Harvard University, July 2024); GSIPE APSA 2024 Pre-Conference and APSA 2024 (Philadelphia, September 2024); GSIPE Fall 2024 Virtual Webinar (October 2024), PEIO (Harvard University, January 2025), and ISA (Chicago, March 2025).
 
-> **Abstract:** Rules prescribing the duration of tariff elimination are common in modern free trade agreements (FTAs) and are assigned differentially and selectively to sensitive products, as their extensive use incurs opportunity costs for more exporters. What explains the variation in allocation and duration of tariff phaseouts? Beyond mitigating import competition, I argue that executives design FTA tariff schedules to serve both electoral and ratification goals. I test my argument using a novel dataset on tariff treatment at the tariff line level across all 13 FTAs ratified by the United States. I find that US presidents allocated longer tariff phaseout duration to products made by industries concentrated in swing states to electorally insulate themselves and districts of protectionist legislators to buy their silence. Both effects are stronger when the partner poses a greater import threat. This paper is the first to demonstrate the dual focus of negotiating carve-outs in international agreements.
+\*Current version presented at UCSD IR Retreat (May 2025) and IHS Trade and Industrial Policy Workshop (May 2025).
+
+> **Abstract:** How do US presidents liberalize trade in the shadow of congressional politics? Conventional wisdom suggests that a strategic president would maintain the pro-trade coalition in Congress by limiting tariff cuts on important goods. What happens when all dutiable import tariffs must be cut per WTO rules on preferential trade agreements? I argue that the president should strategically phase out specific tariffs in free trade agreements, as opposed to eliminating tariffs immediately, to buy Congressional support. Specifically, I argue that the executive targets phaseout to the median legislator as they are cost-efficient and credible in ratification promises. Controlling for districts' economic needs, I find that a greater share of a district's workforce is covered by tariff phaseout the closer the representative is to the median on trade issues. However, more tariff phaseouts do not necessarily translate to a higher likelihood for ratification, suggesting that it is one empirically testable part of a bundle of demands fulfilled to buy median legislators' ratification votes.
 >
-> **Keywords:** tariffs, trade agreements, US politics, particularistic president, reciprocity
+> **Keywords:** preferential trade agreements, tariffs, congress, ratification, median legislator
 
 [Working Paper](/files/pdf/research/Thai-JMP.pdf){: .btn--research} [Poster](/files/pdf/research/Thai-JMP-poster.pdf){: .btn--research}
