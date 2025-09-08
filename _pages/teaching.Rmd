@@ -8,17 +8,25 @@ author_profile: true
 
 ## Office Hours
 
-Spring Quarter 2025 (POLI 12: Introduction to International Relations)
+[Sign-up Link](https://calendly.com/ethai/officehours){: .btn--research}
 
--   In Person Office Hours: Monday and Wednesday 11 AM - 12:00 PM
+### Fall Quarter 2025 [Teaching Assistant]
 
-    -   Office: SSB 324
+**GPOC 412 [Globalization]**
+
+-   Thursdays 2-4 PM [during weeks when assignments and midterms are graded]
+
+**GPEC 443 [GIS & Spatial Data Analysis]**
+
+-   TBD
 
 ## *Associate Instructor* for the University of California, San Diego
 
 -   **POLI 12: Introduction to International Relations** (Spring Quarter, 2026)
 
 -   **POLI 144E: Politics of International Trade** (Summer Session 1, 2025)
+
+    -   [Syllabus](/files/pdf/teaching/POLI 144E syllabus June 30, 2025.pdf)
 
 -   **POLI 12: Introduction to International Relations** (Spring Quarter, 2025)
 

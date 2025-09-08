@@ -32,127 +32,6 @@ schedule](https://ustr.gov/sites/default/files/uploads/agreements/fta/korus/Anne
 toward South Korean imports from the US-Korea FTA (i.e., KORUS). Here,
 there are four columns:
 
-1.  **HTS 8:** lists the 8-digit product codes that are specific to the
-    US (the first 6 are internationally harmonized).
-
-2.  **Description:** provides, well, the description of the specific
-    product code.
-
-3.  **Base Rate:** lists the
-    [most-favored-nation](https://www.wto.org/english/res_e/webcas_e/ltt_e/ltt1_e.htm)
-    (MFN) rate for each product at the time of negotiation.[^2]
-
-4.  **Staging Category:** lists the staging category for each product.
-
-<img src="/images/ftariff/USA_KOR_schedule.png" style="display: block; margin: auto;"/>
-
-Immediately, any reader would be confused about what any of the “staging
-category” actually means. Why does “bovine carcasses and halves fresh or
-chilled” product have two separate staging categories? Why do we even
-have two separate HTS codes to describe the same traded good? What is
-the difference between A and D staging?
-
-| HTS8     | Description                                                                    | Base Rate    | Staging Category |
-|----------|--------------------------------------------------------------------------------|--------------|------------------|
-| 02011005 | Bovine carcasses and halves, fresh or chld., descr. in gen. note 15 of the HTS | 4.4 cents/kg | A                |
-| 02011010 | Bovine carcasses and halves, fresh or chld., descr. in add. US note 3 to Ch. 2 | 4.4 cents/kg | D                |
-
-Let’s answer these questions backward. First, in order to understand the
-stagings, we need to take a look at the “Tariff Elimination” Annex 2-B
-under the “National Treatment and Market Access for Goods”
-[chapter](https://ustr.gov/sites/default/files/uploads/agreements/fta/korus/asset_upload_file904_12701.pdf).
-
-- duties on originating goods provided for in the items in **staging
-  category <u>A</u>** in a Party’s Schedule <u>shall be eliminated
-  entirely and such goods shall be duty-free on the date this Agreement
-  enters into force</u>;
-
-- duties on originating goods provided for in the items in **staging
-  category <u>D</u>** in a Party’s Schedule <u>shall be removed in five
-  equal annual stages</u> beginning on the date this Agreement enters
-  into force, and such goods shall be duty-free, effective January 1 of
-  year five;
-
-What Annex 2-B tells us is that imports of bovine carcasses and halves
-that fit the description in the [general note 15 of the
-HTS](/files/pdf/posts/staging/HTS%20General%20Note%2015.pdf) (02011005)
-would enter duty-free as soon as KORUS enters into force. On the other
-hands, bovine carcasses and halves that fit the description in [US note
-3 to HTS Chapter 2](/files/pdf/posts/staging/HTS%20Chapter%202.pdf)
-(02011010) would be phased out over five years in equal annual stages.
-
-OK, now that we have figured out what each of the staging categories
-means, let’s dive into what makes these two product codes different. For
-02011005, the general note defines the import of bovine carcasses and
-halves not to be counted against the quantity of the tariff-rate quota
-if it is imported for non-commercial use.[^3] On the other hand,
-02011010 specifies the maximum amount of bovine carcasses and halves in
-metric tons allowed to be entered into the US (presumably for commercial
-use). The note also includes a table of the quantities allowance for
-specific trade partners.
-
-| Country                 | Quantity (metric ton) |
-|-------------------------|-----------------------|
-| Canada                  | No limit              |
-| Mexico                  | No limit              |
-| Australia               | 378,214               |
-| New Zealand             | 213,402               |
-| Argentina               | 20,000                |
-| Uruguay                 | 20,000                |
-| Other countries or area | 65,005                |
-
-Hence, the interpretation of 02011010’s tariff treatment is that the
-duty portion of the tariff-rate quota (4.4 cents/kg) would be phased out
-over 5 years, but there would remain the maximum 65,005 metric tons
-quota on Korean bovine carcasses and halves. The tariff on the two
-bovine variants would look something like this:
-
-| HTS      | Year 1        | Year 2        | Year 3        | Year 4        | Year 5    |
-|----------|---------------|---------------|---------------|---------------|-----------|
-| 02011005 | 0 cent/kg     |               |               |               |           |
-| 02011010 | 3.52 cents/kg | 2.64 cents/kg | 1.76 cents/kg | 0.88 cents/kg | 0 cent/kg |
-
-> Side note: not every free trade agreement uses tariff staging
-> categories. Instead, they would clearly specify the tariffs for each
-> year like the table above.
-
-What implication does tariff phaseout have on the tariff revenue from
-importing 65,005 metric tons worth of bovine carcasses each year after
-KORUS enters into force versus before? The table below calculates the
-dollar amount that would be collected by customs.
-
-| Year   | Tariff Revenue[^4] from 02011010 |
-|--------|----------------------------------|
-| Year 0 | \$2,860,220.                     |
-| Year 1 | \$2,288,176                      |
-| Year 2 | \$1,716,132                      |
-| Year 3 | \$1,144,088                      |
-| Year 4 | \$572,044                        |
-| Year 5 | 0                                |
-
-------------------------------------------------------------------------
-
-**Concluding Note:** This is just a technical introduction to the
-complicated but super fascinating world of tariff staging. While I only
-provided an example on the treatment of bovine carcasses imports from
-South Korea, the figures below illustrates the wide variety of tariff
-treatment and diversity of phaseout durations across all products with
-all US trade partners. Future blog posts will touch on why tariff
-staging is economically and politically relevant and what policymakers
-and academics can learn from tariff phaseouts.
-
-**Interested in what explains the variation in tariff phaseouts?** My
-[job market paper](/files/pdf/research/Thai-JMP.pdf) demonstrates that
-the structure of US FTA tariff schedules can be explained not just by
-economic factors but also by the executives’ interests in insulating
-themselves electorally.
-
-<img src="/images/ftariff/treatment_ticks.jpg" style="display: block; margin: auto;"/>
-
-<img src="/images/ftariff/phaseout_ticks.jpg" style="display: block; margin: auto;"/>
-
-  
-
 [^1]: Free trade agreements are also known as “regional” trade
     agreements (RTAs). RTAs have proliferated seven-folds since the WTO
     Uruguay Round concluded in 1995. The WTO reports that there are
@@ -182,8 +61,67 @@ themselves electorally.
     hand, services agreements are authorized under ([GATS Article
     V](https://www.wto.org/english/res_e/publications_e/ai17_e/gats_art5_jur.pdf)).
 
+1.  **HTS 8:** lists the 8-digit product codes that are specific to the
+    US (the first 6 are internationally harmonized).
+
+2.  **Description:** provides, well, the description of the specific
+    product code.
+
+3.  **Base Rate:** lists the
+    [most-favored-nation](https://www.wto.org/english/res_e/webcas_e/ltt_e/ltt1_e.htm)
+    (MFN) rate for each product at the time of negotiation.[^2]
+
+4.  **Staging Category:** lists the staging category for each product.
+
 [^2]: The US’s version of MFN rates is called *normal trading relations
     (NTR) rates.*
+
+<img src="/images/ftariff/USA_KOR_schedule.png" style="display: block; margin: auto;"/>
+
+Immediately, any reader would be confused about what any of the “staging
+category” actually means. Why does “bovine carcasses and halves fresh or
+chilled” product have two separate staging categories? Why do we even
+have two separate HTS codes to describe the same traded good? What is
+the difference between A and D staging?
+
+| HTS8     | Description                                                                    | Base Rate    | Staging Category |
+|-----------|---------------------------------------|-----------|-----------|
+| 02011005 | Bovine carcasses and halves, fresh or chld., descr. in gen. note 15 of the HTS | 4.4 cents/kg | A                |
+| 02011010 | Bovine carcasses and halves, fresh or chld., descr. in add. US note 3 to Ch. 2 | 4.4 cents/kg | D                |
+
+Let’s answer these questions backward. First, in order to understand the
+stagings, we need to take a look at the “Tariff Elimination” Annex 2-B
+under the “National Treatment and Market Access for Goods”
+[chapter](https://ustr.gov/sites/default/files/uploads/agreements/fta/korus/asset_upload_file904_12701.pdf).
+
+-   duties on originating goods provided for in the items in **staging
+    category** <u>A</u> in a Party’s Schedule <u>shall be eliminated
+    entirely and such goods shall be duty-free on the date this
+    Agreement enters into force</u>;
+
+-   duties on originating goods provided for in the items in **staging
+    category** <u>D</u> in a Party’s Schedule <u>shall be removed in
+    five equal annual stages</u> beginning on the date this Agreement
+    enters into force, and such goods shall be duty-free, effective
+    January 1 of year five;
+
+What Annex 2-B tells us is that imports of bovine carcasses and halves
+that fit the description in the [general note 15 of the
+HTS](/files/pdf/posts/staging/HTS%20General%20Note%2015.pdf) (02011005)
+would enter duty-free as soon as KORUS enters into force. On the other
+hands, bovine carcasses and halves that fit the description in [US note
+3 to HTS Chapter 2](/files/pdf/posts/staging/HTS%20Chapter%202.pdf)
+(02011010) would be phased out over five years in equal annual stages.
+
+OK, now that we have figured out what each of the staging categories
+means, let’s dive into what makes these two product codes different. For
+02011005, the general note defines the import of bovine carcasses and
+halves not to be counted against the quantity of the tariff-rate quota
+if it is imported for non-commercial use.[^3] On the other hand,
+02011010 specifies the maximum amount of bovine carcasses and halves in
+metric tons allowed to be entered into the US (presumably for commercial
+use). The note also includes a table of the quantities allowance for
+specific trade partners.
 
 [^3]: For example, the rule applies if the product imported by or for
     the account for any US agency (a); imported for personal use,
@@ -196,4 +134,65 @@ themselves electorally.
     Agriculture (USDA) is presented at the time of entry” (c) ([General
     Note 15](/files/pdf/posts/staging/HTS%20General%20Note%2015.pdf)).
 
+| Country                 | Quantity (metric ton) |
+|-------------------------|-----------------------|
+| Canada                  | No limit              |
+| Mexico                  | No limit              |
+| Australia               | 378,214               |
+| New Zealand             | 213,402               |
+| Argentina               | 20,000                |
+| Uruguay                 | 20,000                |
+| Other countries or area | 65,005                |
+
+Hence, the interpretation of 02011010’s tariff treatment is that the
+duty portion of the tariff-rate quota (4.4 cents/kg) would be phased out
+over 5 years, but there would remain the maximum 65,005 metric tons
+quota on Korean bovine carcasses and halves. The tariff on the two
+bovine variants would look something like this:
+
+| HTS      | Year 1        | Year 2        | Year 3        | Year 4        | Year 5    |
+|------------|------------|------------|------------|------------|------------|
+| 02011005 | 0 cent/kg     |               |               |               |           |
+| 02011010 | 3.52 cents/kg | 2.64 cents/kg | 1.76 cents/kg | 0.88 cents/kg | 0 cent/kg |
+
+> Side note: not every free trade agreement uses tariff staging
+> categories. Instead, they would clearly specify the tariffs for each
+> year like the table above.
+
+What implication does tariff phaseout have on the tariff revenue from
+importing 65,005 metric tons worth of bovine carcasses each year after
+KORUS enters into force versus before? The table below calculates the
+dollar amount that would be collected by customs.
+
+| Year   | Tariff Revenue[^4] from 02011010 |
+|--------|----------------------------------|
+| Year 0 | \$2,860,220.                     |
+| Year 1 | \$2,288,176                      |
+| Year 2 | \$1,716,132                      |
+| Year 3 | \$1,144,088                      |
+| Year 4 | \$572,044                        |
+| Year 5 | 0                                |
+
 [^4]: 1 metric ton = 1000 kg. Hence, 65,005 metric tons = 65005000 kg.
+
+------------------------------------------------------------------------
+
+**Concluding Note:** This is just a technical introduction to the
+complicated but super fascinating world of tariff staging. While I only
+provided an example on the treatment of bovine carcasses imports from
+South Korea, the figures below illustrates the wide variety of tariff
+treatment and diversity of phaseout durations across all products with
+all US trade partners. Future blog posts will touch on why tariff
+staging is economically and politically relevant and what policymakers
+and academics can learn from tariff phaseouts.
+
+**Interested in what explains the variation in tariff phaseouts?** My
+[job market
+paper](https://www.dropbox.com/scl/fi/ohh7b7bg2qn14dfez9g8u/Courting_Median_Thai.pdf?rlkey=y6hs1j62hxafrsvmgqjhkb5e1&st=bif8gof1&dl=0)
+demonstrates that the structure of US FTA tariff schedules can be
+explained not just by economic factors but also by the executives’
+interests in insulating themselves electorally.
+
+<img src="/images/ftariff/treatment_ticks.jpg" style="display: block; margin: auto;"/>
+
+<img src="/images/ftariff/phaseout_ticks.jpg" style="display: block; margin: auto;"/>

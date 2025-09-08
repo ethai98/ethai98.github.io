@@ -8,16 +8,24 @@ author_profile: true
 
 <!-- [blah blah] -->
 
-## Working Papers
+## Job Market Paper:
 
-### Courting the Median: Strategic President and the Distribution of Temporary Protection in U.S. Free Trade Agreements
+### Courting the Median: Strategic President and the Distribution of Tariff Phaseouts in U.S. Free Trade Agreements
 
 \*Previous versions presented at IHS Trade Symposium (Harvard University, July 2024); GSIPE APSA 2024 Pre-Conference and APSA 2024 (Philadelphia, September 2024); GSIPE Fall 2024 Virtual Webinar (October 2024), PEIO (Harvard University, January 2025), and ISA (Chicago, March 2025).
 
-\*Current version presented at UCSD IR Retreat (May 2025) and IHS Trade and Industrial Policy Workshop (May 2025).
+\*Current version presented at UCSD IR Retreat (May 2025), IHS Trade and Industrial Policy Workshop (May 2025), and APSA 2025.
 
-> **Abstract:** How do US presidents liberalize trade in the shadow of congressional politics? Conventional wisdom suggests that a strategic president would maintain the pro-trade coalition in Congress by limiting tariff cuts on important goods. What happens when all dutiable import tariffs must be cut per WTO rules on preferential trade agreements? I argue that the president should strategically phase out specific tariffs in free trade agreements, as opposed to eliminating tariffs immediately, to buy Congressional support. Specifically, I argue that the executive targets phaseout to the median legislator as they are cost-efficient and credible in ratification promises. Controlling for districts' economic needs, I find that a greater share of a district's workforce is covered by tariff phaseout the closer the representative is to the median on trade issues. However, more tariff phaseouts do not necessarily translate to a higher likelihood for ratification, suggesting that it is one empirically testable part of a bundle of demands fulfilled to buy median legislators' ratification votes.
+> **Abstract:** How do presidents design free trade agreements? Nuance has been overshadowed by the simplifying free-trading assumption of the president; indeed, the president can be selectively protectionist to promote free trade. I argue that the president uses tariff phaseouts, heretofore an understudied provision, as a form of targetable temporary protection to buy the median legislator's ratification vote and shield import-sensitive regions. I test these predictions using novel product-level tariff phaseout data from 14 U.S. free trade agreements (FTAs) signed between 1992 and 2015, linking these protections to specific districts. I find that presidents allocate more tariff phaseouts in import-sensitive regions and districts of legislators closer to the median, which increases the likelihood of them ratifying the FTA. Such targeting is limited to FTAs negotiated during divided government. This paper is the first to empirically test the median voter theorem in the context of inter-branch allocation of goods to achieve political ends.
 >
 > **Keywords:** preferential trade agreements, tariffs, congress, ratification, median legislator
 
-[Working Paper](/files/pdf/research/Thai-JMP.pdf){: .btn--research} [Poster](/files/pdf/research/Thai-JMP-poster.pdf){: .btn--research}
+[Working Paper](https://www.dropbox.com/scl/fi/ohh7b7bg2qn14dfez9g8u/Courting_Median_Thai.pdf?rlkey=y6hs1j62hxafrsvmgqjhkb5e1&st=bif8gof1&dl=0){: .btn--research}
+
+## Work in Progress:
+
+### Deferring Punishment From Trade Liberalization: How Tariff Phaseouts Delay Economic and Political Consequences
+
+> **Abstract:** Can international trade agreements be designed to delay political fallout? I argue that phasing out tariffs can delay adverse economic and political consequences. I test these hypotheses using the case of NAFTA, whose tariff schedule was negotiated prior to the Clinton administration, providing a quasi-exogenous variation on phaseout allocation. First, I establish that industry employment reacts differently depending on the phaseout duration. Second, counties sensitive to imports without a NAFTA tariff phaseout punished Democratic presidential candidates immediately. In contrast, areas with phaseouts penalize them later once tariffs are completely phased out. Third, Democratic Representatives are at greater risk of being voted out of office if they ratified NAFTA; however, greater phaseout coverage for their district mitigates such risk. This article presents one of the first pieces of evidence to suggest that highly particularistic and targeted provisions of trade agreements can delay electoral backlash, which carries implications for how incumbent presidents may utilize such a tool to insulate themselves electorally when committing to free trade.
+>
+> **Keywords:** NAFTA, president, congress, election, trade, protection
