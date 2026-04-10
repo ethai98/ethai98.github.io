@@ -10,8 +10,6 @@ author_profile: true
 
 [Sign-up Link](https://calendly.com/ethai/officehours){: .btn--research}
 
-### Fall Quarter 2025 [Teaching Assistant]
-
 ## *Associate Instructor* for the University of California, San Diego
 
 -   **POLI 144: International Political Economy** (Planned Summer Session 1, 2026)
@@ -19,6 +17,8 @@ author_profile: true
 -   **POLI 144E: Politics of International Trade** (Planned Summer Session 2, 2026)
 
 -   **POLI 12: Introduction to International Relations** (Spring Quarter, 2026)
+
+    -   [Syllabus](https://www.dropbox.com/scl/fi/rqhlgdkw56d2y9sv0au80/POLI-12-Syllabus-Spring-2026-v2.20260405.pdf?rlkey=3wekxg8p9pe3bjb2pj215sdua&st=itxtv3o3&dl=0)
 
 -   **POLI 144E: Politics of International Trade** (Summer Session 1, 2025)
 
