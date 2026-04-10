@@ -12,13 +12,9 @@ author_profile: true
 
 ### Courting the Median: Strategic President and the Distribution of Tariff Phaseouts in U.S. Free Trade Agreements
 
-\*Previous versions presented at IHS Trade Symposium (Harvard University, July 2024); GSIPE APSA 2024 Pre-Conference and APSA 2024 (Philadelphia, September 2024); GSIPE Fall 2024 Virtual Webinar (October 2024), PEIO (Harvard University, January 2025), and ISA (Chicago, March 2025).
-
-\*Current version presented at UCSD IR Retreat (May 2025), IHS Trade and Industrial Policy Workshop (May 2025), and APSA 2025.
-
-> **Abstract:** How do presidents design free trade agreements? Nuance has been overshadowed by the simplifying free-trading assumption of the president; indeed, the president can be selectively protectionist to promote free trade. I argue that the president uses tariff phaseouts, heretofore an understudied provision, as a form of targetable temporary protection to buy the median legislator's ratification vote and shield import-sensitive regions. I test these predictions using novel product-level tariff phaseout data from 14 U.S. free trade agreements (FTAs) signed between 1992 and 2015, linking these protections to specific districts. I find that presidents allocate more tariff phaseouts in import-sensitive regions and districts of legislators closer to the median, which increases the likelihood of them ratifying the FTA. Such targeting is limited to FTAs negotiated during divided government. This paper is the first to empirically test the median voter theorem in the context of inter-branch allocation of goods to achieve political ends.
+> **Abstract:** How do presidents design trade agreements? I argue that presidents strategically allocate tariff phaseouts, which delay and soften import competition, to industries represented by pivotal median legislators, offsetting the political costs from ratifying a trade agreement. Using a novel dataset on tariff treatment covering 14 U.S. free trade agreements (FTAs) and an Instrumental Variable (IV) design based on legislators' ideological proximity to the House median, I find that pivotal legislators receive significantly more targeted phaseouts, which causally increases their likelihood of ratifying the FTA. This political transaction is specific to the incumbent; the effect disappears if a district replaces its representative before ratification. Profiling of IV compliers suggests that median legislators seek to support job-creating policies but require time for their industries to adjust to trade liberalization, confirming that tariff phaseouts offset political reservations about supporting FTAs.
 >
-> **Keywords:** preferential trade agreements, tariffs, congress, ratification, median legislator
+> **Keywords:** free trade agreements, tariffs, phaseout, Congress, ratification, instrumental variable
 
 [Working Paper](https://www.dropbox.com/scl/fi/ohh7b7bg2qn14dfez9g8u/Courting_Median_Thai.pdf?rlkey=y6hs1j62hxafrsvmgqjhkb5e1&st=bif8gof1&dl=0){: .btn--research}
 

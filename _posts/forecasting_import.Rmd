@@ -1,0 +1,189 @@
+---
+title: Forecasting US Import
+output:
+  md_document:
+    variant: gfm+footnotes
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2026-03-30
+permalink: /posts/2026/forecast_us_import
+excerpt_separator: <!--more-->
+always_allow_html: false
+toc: false
+header:
+tags:
+  - tidyverse
+  - data-science
+  - visualization
+  - data-manipulation
+  - forecasting
+  - trade
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(here)
+library(forecast)
+library(astsa)
+library(lubridate)
+library(zoo)
+library(MLmetrics)
+
+```
+
+# Introduction
+
+Here, I use US import data gathered from the USITC database. I
+harmonized HTS codes across revisions using Pierce and Schott's (2012)
+concordance. I originally cleaned data for a portion of my dissertation
+that requires differentiation in import from Canada, Mexico, China, and
+the Rest of the World (ROW). However, for this exercise, I'm going
+aggregate all import values to annual value of consumable imports
+(`con_val_mo`) and dutiable import for consumption (`dut_val_mo`).
+
+```{r load data}
+import_df <- readRDS(here("local", "us_monthly_import_df_1990_2016.hs_synth_df.rds")) %>%
+  # get rid of negative import values 
+  filter(dut_val_mo >= 0 & con_val_mo >= 0) %>%
+  group_by(year, month) %>%
+  summarise(con_val_mo = sum(con_val_mo, na.rm=T),
+            dut_val_mo = sum(dut_val_mo, na.rm=T)) %>%
+  ungroup()
+
+
+```
+
+Next, let's examine the trends across time. The data is at the monthly
+level, which provides greater granularity to the data. Aside from the
+two massive drop in early 1990s and 2000s, we saw a modest drop around
+the time of the financial crisis.
+
+```{r}
+# Describe the data
+
+import_df %>%
+  # create year-month Date object using the lubridate package
+  mutate(ym = paste0(year, "-", month, "-01"),
+         ym = ymd(ym)) %>%
+  ggplot(aes(x = ym, y = log(con_val_mo))) +
+  geom_line() +
+  scale_x_date(date_breaks = "4 year", date_labels = "%Y")
+```
+
+It looks like there were two massive drops in imports. This may be a
+result from administrative data error? Let's take the 12-month rolling
+average of the data.
+
+```{r rolling average}
+import_df %>%
+  mutate(con_val_mo_rollavg = rollapply(con_val_mo, width = 12, FUN = mean, fill = NA, align = "right", partial = TRUE),
+         dut_val_mo_rollavg = rollapply(dut_val_mo, width = 12, FUN = mean, fill = NA, align = "right", partial = TRUE)) %>%
+  mutate(ym = paste0(year, "-", month, "-01"),
+         ym = ymd(ym)) %>%
+  ggplot(aes(x = ym, y = log(con_val_mo_rollavg))) +
+  geom_line() +
+  scale_x_date(date_breaks = "4 year", date_labels = "%Y")
+```
+
+Given the shock in 2008, I will conduct a forecasting analysis from
+1993 - 2008, omitting 1992-09 and 2004-02 due to outlier import value.
+Next, I split the data into a training and validation set, using
+1990-2004 as training and 2005-2008 as validation.
+
+```{r}
+import <- import_df %>%
+    mutate(ym = paste0(year, "-", month, "-01"),
+         ym = ymd(ym))  %>%
+  mutate(con_val_mo = ifelse(ym %in% c("1992-09-01", "2004-02-01"), NA, con_val_mo)) %>%
+  # interpolate these years
+  mutate(con_val_mo = na.approx(con_val_mo)) %>%
+  select(ym, con_val_mo) 
+  
+
+validation <- import %>% 
+  filter(year(ym) >= 2004) 
+
+training_ts <- ts(
+  import %>% filter(year(ym) < 2004) %>% pull(con_val_mo),
+  frequency = 12, # Assuming monthly data based on your period2
+  start = c(1990, 1) # Adjust to match your dataset's actual starting year and month
+)
+
+validation_ts <- ts(
+  import %>% filter(year(ym) >= 2004 & year(ym) <= 2012) %>% pull(con_val_mo),
+  frequency = 12,
+  start = c(2004, 1)
+)
+
+```
+
+```{r}
+hw_model = hw(training_ts, period1 = 4, period2 = 12, h = length(validation_ts))
+
+MAPE(hw_model$mean, validation_ts) *100
+
+
+forecast_df <- tibble(
+  # Assuming 'validation' is still in your environment from the previous step
+  ym = validation$ym, 
+  predicted_val = as.numeric(hw_model$mean)
+)
+
+import %>%
+  ggplot(aes(x = ym, y = log(con_val_mo))) +
+  geom_line(color = "black") + # Historical data
+  
+  # Add the predicted values over the top
+  geom_line(data = forecast_df, 
+            aes(x = ym, y = log(predicted_val)), 
+            color = "red", 
+            linetype = "dashed", 
+            linewidth = 1) +
+            
+  scale_x_date(date_breaks = "4 year", date_labels = "%Y") +
+  labs(y = "Log(Import Value)", x = "Date") +
+  theme_minimal()
+```
+
+```{r}
+arima_optimal = auto.arima(training_ts)
+
+sarima_forecast = sarima.for(training_ts, n.ahead=length(validation_ts),
+                             p=0,d=0,q=0,P=0,D=1,Q=0,S=12)
+
+arima_forecast <- forecast(arima_optimal, h = length(validation_ts))
+
+# 2. Extract the point forecasts into a tidy data frame 
+# (Exactly like we did for the Holt-Winters model!)
+arima_forecast_df <- tibble(
+  ym = validation$ym, 
+  predicted_val = as.numeric(arima_forecast$mean)
+)
+
+# 3. Plot it over your historical data
+import %>%
+  ggplot(aes(x = ym, y = log(con_val_mo))) +
+  geom_line(color = "black") + 
+  
+  # Add the new ARIMA predictions
+  geom_line(data = arima_forecast_df, 
+            aes(x = ym, y = log(predicted_val)), 
+            color = "blue", # Switched to blue to distinguish from HW!
+            linetype = "dashed", 
+            linewidth = 1) +
+            
+  scale_x_date(date_breaks = "4 year", date_labels = "%Y") +
+  labs(y = "Log(Import Value)", x = "Date", title = "ARIMA Forecast") +
+  theme_minimal()
+
+```
+
+# Reference
+
+Pierce, Justin R. and Peter K. Schott. 2012, “Concording U.S. Harmonized
+System Categories Over Time.” Journal of Official Statistics 28(1): pp.
+53-68.

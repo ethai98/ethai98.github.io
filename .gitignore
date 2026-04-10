@@ -12,3 +12,6 @@ Gemfile.lock
 node_modules
 package-lock.json
 .Rproj.user
+app/ptariff.csv
+*.rds
+*.xlsx

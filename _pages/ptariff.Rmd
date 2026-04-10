@@ -25,3 +25,7 @@ The next figure hones in on phased-out products and highlights the incredible va
 [^2]: Product codes that were already duty-free or treated with immediate elimination or exemption are grouped as "Other" to improve visibility.
 
 ![Phaseout Duration](/images/ftariff/phaseout_ticks.jpg)
+
+
+
+
